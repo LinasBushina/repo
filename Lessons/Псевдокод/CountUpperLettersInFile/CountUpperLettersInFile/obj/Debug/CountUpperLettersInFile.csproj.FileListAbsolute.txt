@@ -1,0 +1,12 @@
+c:\users\notebook\documents\visual studio 2013\Projects\CountUpperLettersInFile\CountUpperLettersInFile\bin\Debug\CountUpperLettersInFile.exe.config
+c:\users\notebook\documents\visual studio 2013\Projects\CountUpperLettersInFile\CountUpperLettersInFile\bin\Debug\CountUpperLettersInFile.exe
+c:\users\notebook\documents\visual studio 2013\Projects\CountUpperLettersInFile\CountUpperLettersInFile\bin\Debug\CountUpperLettersInFile.pdb
+c:\users\notebook\documents\visual studio 2013\Projects\CountUpperLettersInFile\CountUpperLettersInFile\obj\Debug\CountUpperLettersInFile.csprojResolveAssemblyReference.cache
+c:\users\notebook\documents\visual studio 2013\Projects\CountUpperLettersInFile\CountUpperLettersInFile\obj\Debug\CountUpperLettersInFile.exe
+c:\users\notebook\documents\visual studio 2013\Projects\CountUpperLettersInFile\CountUpperLettersInFile\obj\Debug\CountUpperLettersInFile.pdb
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Псевдокод\CountUpperLettersInFile\CountUpperLettersInFile\bin\Debug\CountUpperLettersInFile.exe.config
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Псевдокод\CountUpperLettersInFile\CountUpperLettersInFile\obj\Debug\CountUpperLettersInFile.exe
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Псевдокод\CountUpperLettersInFile\CountUpperLettersInFile\obj\Debug\CountUpperLettersInFile.pdb
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Псевдокод\CountUpperLettersInFile\CountUpperLettersInFile\bin\Debug\CountUpperLettersInFile.exe
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Псевдокод\CountUpperLettersInFile\CountUpperLettersInFile\bin\Debug\CountUpperLettersInFile.pdb
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Псевдокод\CountUpperLettersInFile\CountUpperLettersInFile\obj\Debug\CountUpperLettersInFile.csprojResolveAssemblyReference.cache
