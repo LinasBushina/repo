@@ -1,0 +1,6 @@
+c:\users\галина бушина\documents\visual studio 2013\Projects\Console\Console\bin\Debug\Console.exe.config
+c:\users\галина бушина\documents\visual studio 2013\Projects\Console\Console\bin\Debug\Console.exe
+c:\users\галина бушина\documents\visual studio 2013\Projects\Console\Console\bin\Debug\Console.pdb
+c:\users\галина бушина\documents\visual studio 2013\Projects\Console\Console\obj\Debug\Console.csprojResolveAssemblyReference.cache
+c:\users\галина бушина\documents\visual studio 2013\Projects\Console\Console\obj\Debug\Console.exe
+c:\users\галина бушина\documents\visual studio 2013\Projects\Console\Console\obj\Debug\Console.pdb
