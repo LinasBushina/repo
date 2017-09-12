@@ -10,13 +10,14 @@ namespace Console
     {
         static void Main(string[] args)
         {
-            string str = "123";
-            int number = 0;
+            string str = "567";
+            int num = 0;
             for (int i = 0; i < str.Length; i++)
             {
-                number = number * 10 + str[i] - 0x30;
+                num *= 10;
+                num += str[i] - '0';
             }
-            System.Console.WriteLine(number);
+            System.Console.WriteLine(num);
         }
     }
 }
