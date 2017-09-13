@@ -1,0 +1,6 @@
+c:\users\галина бушина\documents\visual studio 2013\Projects\NumToStr\NumToStr\bin\Debug\NumToStr.exe.config
+c:\users\галина бушина\documents\visual studio 2013\Projects\NumToStr\NumToStr\bin\Debug\NumToStr.exe
+c:\users\галина бушина\documents\visual studio 2013\Projects\NumToStr\NumToStr\bin\Debug\NumToStr.pdb
+c:\users\галина бушина\documents\visual studio 2013\Projects\NumToStr\NumToStr\obj\Debug\NumToStr.csprojResolveAssemblyReference.cache
+c:\users\галина бушина\documents\visual studio 2013\Projects\NumToStr\NumToStr\obj\Debug\NumToStr.exe
+c:\users\галина бушина\documents\visual studio 2013\Projects\NumToStr\NumToStr\obj\Debug\NumToStr.pdb
