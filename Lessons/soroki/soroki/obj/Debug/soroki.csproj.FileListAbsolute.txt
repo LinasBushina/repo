@@ -1,0 +1,6 @@
+c:\users\галина бушина\documents\visual studio 2013\Projects\soroki\soroki\bin\Debug\soroki.exe.config
+c:\users\галина бушина\documents\visual studio 2013\Projects\soroki\soroki\bin\Debug\soroki.exe
+c:\users\галина бушина\documents\visual studio 2013\Projects\soroki\soroki\bin\Debug\soroki.pdb
+c:\users\галина бушина\documents\visual studio 2013\Projects\soroki\soroki\obj\Debug\soroki.csprojResolveAssemblyReference.cache
+c:\users\галина бушина\documents\visual studio 2013\Projects\soroki\soroki\obj\Debug\soroki.exe
+c:\users\галина бушина\documents\visual studio 2013\Projects\soroki\soroki\obj\Debug\soroki.pdb
