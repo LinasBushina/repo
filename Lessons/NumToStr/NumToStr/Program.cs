@@ -11,20 +11,13 @@ namespace NumToStr
         static void Main(string[] args)
         {
             int num = 123;
-            int flag = 0;
             string str = "";
-            while(num>0)
+            while (num > 0)
             {
-                flag = num % 10;
-                str += flag;
+                str = num % 10 + str;
                 num /= 10;
             }
-            string strdubl = "";
-            for (int i = str.Length - 1; i >= 0  ; i-- )
-            {
-                strdubl += str[i];
-            }
-                Console.WriteLine(strdubl);
+            Console.WriteLine(str);
         }
     }
 }

@@ -4,3 +4,9 @@ c:\users\галина бушина\documents\visual studio 2013\Projects\NumToSt
 c:\users\галина бушина\documents\visual studio 2013\Projects\NumToStr\NumToStr\obj\Debug\NumToStr.csprojResolveAssemblyReference.cache
 c:\users\галина бушина\documents\visual studio 2013\Projects\NumToStr\NumToStr\obj\Debug\NumToStr.exe
 c:\users\галина бушина\documents\visual studio 2013\Projects\NumToStr\NumToStr\obj\Debug\NumToStr.pdb
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\NumToStr\NumToStr\bin\Debug\NumToStr.exe.config
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\NumToStr\NumToStr\obj\Debug\NumToStr.exe
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\NumToStr\NumToStr\obj\Debug\NumToStr.pdb
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\NumToStr\NumToStr\bin\Debug\NumToStr.exe
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\NumToStr\NumToStr\bin\Debug\NumToStr.pdb
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\NumToStr\NumToStr\obj\Debug\NumToStr.csprojResolveAssemblyReference.cache

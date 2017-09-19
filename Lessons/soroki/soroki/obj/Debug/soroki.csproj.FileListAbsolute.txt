@@ -4,3 +4,9 @@ c:\users\галина бушина\documents\visual studio 2013\Projects\soroki\
 c:\users\галина бушина\documents\visual studio 2013\Projects\soroki\soroki\obj\Debug\soroki.csprojResolveAssemblyReference.cache
 c:\users\галина бушина\documents\visual studio 2013\Projects\soroki\soroki\obj\Debug\soroki.exe
 c:\users\галина бушина\documents\visual studio 2013\Projects\soroki\soroki\obj\Debug\soroki.pdb
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\soroki\soroki\bin\Debug\soroki.exe.config
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\soroki\soroki\obj\Debug\soroki.exe
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\soroki\soroki\obj\Debug\soroki.pdb
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\soroki\soroki\bin\Debug\soroki.exe
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\soroki\soroki\bin\Debug\soroki.pdb
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\soroki\soroki\obj\Debug\soroki.csprojResolveAssemblyReference.cache

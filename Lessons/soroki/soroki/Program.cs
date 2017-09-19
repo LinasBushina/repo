@@ -8,26 +8,20 @@ namespace soroki
 {
     class Program
     {
+        static string soroki(string num)
+        {
+            if (num.Last() == '1') return num + " сорока";
+            else if (num.Last() >= '2' && num.Last() <= '4')
+            { return num + " сороки"; }
+            else if (num.Last() >= '5' && num.Last() <= '9')
+            { return num + " сорок"; }
+            else return num + " сорок";
+        }
         static void Main(string[] args)
         {
-            Console.WriteLine("Put down number:");
-            string numberreal = Console.ReadLine();
-            string number = numberreal.Trim();
-            if(number.Last() == '1')
+            for (int i = 0; i < 200; i++)
             {
-                Console.WriteLine(number + " сорока");
-            }
-            else if(number.Last()>= '2' && number.Last() <= '4')
-            {
-                Console.WriteLine(number + " сороки");
-            }
-            else if(number.Last()>= '5' && number.Last() <= '9')
-            {
-                Console.WriteLine(number + " сорок");
-            }
-            else if (number.Last() == '0')
-            {
-                Console.WriteLine(number + " сорок");
+                Console.WriteLine(soroki(i.ToString()));
             }
         }
     }
