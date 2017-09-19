@@ -1,0 +1,59 @@
+Ввести значения a и b
+Задать начальное значение flag равное 0
+IF a равен 0
+THEN
+	Увеличить flag на 1
+END-IF
+IF b равен 0
+THEN
+	Увеличить flag на 1
+END-IF
+DO-WHILE flag равен 0
+	IF a больше b
+	THEN
+		a = a % b
+	ELSE
+		b = b % a
+	END-IF
+	Задать значение flag равное 0
+	IF a равен 0
+	THEN
+		Увеличить flag на 1
+	END-IF
+	IF b равен 0
+	THEN
+		Увеличить flag на 1
+	END-IF
+END-DO
+IF a равен 0
+THEN
+	Вывести b
+ElSE
+	Вывести a
+END-IF
+
+Ввести значения a и b
+DO-WHILE a != 0 AND b != 0
+	IF a больше b
+	THEN
+		a = a % b
+	ELSE
+		b = b % a
+	END-IF
+END-DO
+a = a + b
+Вывести a
+
+FUNC(INT a, INT b)
+	IF b == 0
+	THEN
+		RETURN a
+	ELSE
+		a = a % b
+		RETURN FUNC(b, a)
+	END-IF
+END-FUNC
+
+Сложность O(4*log(min(a,b))) 
+Наихудшие случаи, когда a и b последовательные числа Фибоначчи
+Наилучный случай, когда либо a, либо b сразу равно 0
