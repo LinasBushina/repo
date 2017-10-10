@@ -4,3 +4,9 @@ c:\users\галина бушина\documents\visual studio 2013\Projects\Selecti
 c:\users\галина бушина\documents\visual studio 2013\Projects\Selection\Selection\obj\Debug\Selection.csprojResolveAssemblyReference.cache
 c:\users\галина бушина\documents\visual studio 2013\Projects\Selection\Selection\obj\Debug\Selection.exe
 c:\users\галина бушина\documents\visual studio 2013\Projects\Selection\Selection\obj\Debug\Selection.pdb
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Поиск и выборка\Selection\Selection\bin\Debug\Selection.exe.config
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Поиск и выборка\Selection\Selection\obj\Debug\Selection.exe
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Поиск и выборка\Selection\Selection\obj\Debug\Selection.pdb
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Поиск и выборка\Selection\Selection\bin\Debug\Selection.exe
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Поиск и выборка\Selection\Selection\bin\Debug\Selection.pdb
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Поиск и выборка\Selection\Selection\obj\Debug\Selection.csprojResolveAssemblyReference.cache
