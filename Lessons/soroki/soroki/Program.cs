@@ -8,20 +8,21 @@ namespace soroki
 {
     class Program
     {
-        static string soroki(string num)
+        static string soroki(int num)
         {
-            if (num.Last() == '1') return num + " сорока";
-            else if (num.Last() >= '2' && num.Last() <= '4')
-            { return num + " сороки"; }
-            else if (num.Last() >= '5' && num.Last() <= '9')
-            { return num + " сорок"; }
-            else return num + " сорок";
+            if (num % 100 >= 11 && num % 100 <= 14)
+            { return num + " сырков"; }
+            if (num % 10 == 1)
+            { return num + " сырок"; }
+            if (num % 10 >= 2 && num % 10 <= 4)
+            { return num + " сырка"; }
+            return num + " сырков";
         }
         static void Main(string[] args)
         {
             for (int i = 0; i < 200; i++)
             {
-                Console.WriteLine(soroki(i.ToString()));
+                Console.WriteLine(soroki(i));
             }
         }
     }
