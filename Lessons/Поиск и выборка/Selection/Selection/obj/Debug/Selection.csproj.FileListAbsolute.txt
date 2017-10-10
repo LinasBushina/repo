@@ -1,0 +1,6 @@
+c:\users\галина бушина\documents\visual studio 2013\Projects\Selection\Selection\bin\Debug\Selection.exe.config
+c:\users\галина бушина\documents\visual studio 2013\Projects\Selection\Selection\bin\Debug\Selection.exe
+c:\users\галина бушина\documents\visual studio 2013\Projects\Selection\Selection\bin\Debug\Selection.pdb
+c:\users\галина бушина\documents\visual studio 2013\Projects\Selection\Selection\obj\Debug\Selection.csprojResolveAssemblyReference.cache
+c:\users\галина бушина\documents\visual studio 2013\Projects\Selection\Selection\obj\Debug\Selection.exe
+c:\users\галина бушина\documents\visual studio 2013\Projects\Selection\Selection\obj\Debug\Selection.pdb

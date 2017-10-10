@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D5D52D1E-11C3-4F1F-8E1B-AE70B9AA4358}</ProjectGuid>
+    <ProjectGuid>{39AB0A87-672B-40DF-8E3F-70FF76E31F39}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LeastCommonDivisor</RootNamespace>
-    <AssemblyName>LeastCommonDivisor</AssemblyName>
+    <RootNamespace>Selection</RootNamespace>
+    <AssemblyName>Selection</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
