@@ -1,0 +1,6 @@
+c:\users\галина бушина\documents\visual studio 2013\Projects\AuthenticationOfUser\AuthenticationOfUser\bin\Debug\AuthenticationOfUser.exe.config
+c:\users\галина бушина\documents\visual studio 2013\Projects\AuthenticationOfUser\AuthenticationOfUser\bin\Debug\AuthenticationOfUser.exe
+c:\users\галина бушина\documents\visual studio 2013\Projects\AuthenticationOfUser\AuthenticationOfUser\bin\Debug\AuthenticationOfUser.pdb
+c:\users\галина бушина\documents\visual studio 2013\Projects\AuthenticationOfUser\AuthenticationOfUser\obj\Debug\AuthenticationOfUser.csprojResolveAssemblyReference.cache
+c:\users\галина бушина\documents\visual studio 2013\Projects\AuthenticationOfUser\AuthenticationOfUser\obj\Debug\AuthenticationOfUser.exe
+c:\users\галина бушина\documents\visual studio 2013\Projects\AuthenticationOfUser\AuthenticationOfUser\obj\Debug\AuthenticationOfUser.pdb
