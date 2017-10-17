@@ -4,3 +4,9 @@ c:\users\галина бушина\documents\visual studio 2013\Projects\Authent
 c:\users\галина бушина\documents\visual studio 2013\Projects\AuthenticationOfUser\AuthenticationOfUser\obj\Debug\AuthenticationOfUser.csprojResolveAssemblyReference.cache
 c:\users\галина бушина\documents\visual studio 2013\Projects\AuthenticationOfUser\AuthenticationOfUser\obj\Debug\AuthenticationOfUser.exe
 c:\users\галина бушина\documents\visual studio 2013\Projects\AuthenticationOfUser\AuthenticationOfUser\obj\Debug\AuthenticationOfUser.pdb
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\AuthenticationOfUser\AuthenticationOfUser\bin\Debug\AuthenticationOfUser.exe.config
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\AuthenticationOfUser\AuthenticationOfUser\bin\Debug\AuthenticationOfUser.exe
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\AuthenticationOfUser\AuthenticationOfUser\bin\Debug\AuthenticationOfUser.pdb
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\AuthenticationOfUser\AuthenticationOfUser\obj\Debug\AuthenticationOfUser.csprojResolveAssemblyReference.cache
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\AuthenticationOfUser\AuthenticationOfUser\obj\Debug\AuthenticationOfUser.exe
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\AuthenticationOfUser\AuthenticationOfUser\obj\Debug\AuthenticationOfUser.pdb
