@@ -10,3 +10,9 @@ C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\�
 C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Поиск и выборка\Selection\Selection\bin\Debug\Selection.exe
 C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Поиск и выборка\Selection\Selection\bin\Debug\Selection.pdb
 C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Поиск и выборка\Selection\Selection\obj\Debug\Selection.csprojResolveAssemblyReference.cache
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\Поиск и выборка\Selection\Selection\bin\Debug\Selection.exe.config
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\Поиск и выборка\Selection\Selection\bin\Debug\Selection.exe
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\Поиск и выборка\Selection\Selection\bin\Debug\Selection.pdb
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\Поиск и выборка\Selection\Selection\obj\Debug\Selection.csprojResolveAssemblyReference.cache
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\Поиск и выборка\Selection\Selection\obj\Debug\Selection.exe
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\Поиск и выборка\Selection\Selection\obj\Debug\Selection.pdb

@@ -1,0 +1,6 @@
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\IntNumbers\IntNumbers\bin\Debug\IntNumbers.exe.config
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\IntNumbers\IntNumbers\bin\Debug\IntNumbers.exe
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\IntNumbers\IntNumbers\bin\Debug\IntNumbers.pdb
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\IntNumbers\IntNumbers\obj\Debug\IntNumbers.csprojResolveAssemblyReference.cache
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\IntNumbers\IntNumbers\obj\Debug\IntNumbers.exe
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\IntNumbers\IntNumbers\obj\Debug\IntNumbers.pdb

@@ -35,8 +35,28 @@ namespace Selection
             return maxnum;
         }
 
+        static int BinarySearch(int[] array, int K)
+        {
+            int start = 2;
+            int end = 10;
+            int middle = 0;
+            while (start <= end)
+            {
+              middle = (start + end) / 2;
+              switch (array[middle].CompareTo(K))
+                {
+                    case -1: start = middle + 1; break;
+                    case 0: return middle; 
+                    case 1: end = middle - 1; break;
+                }
+            
+           }
+            return -1;
+        }
+
         static void Main(string[] args)
         {
+            DateTime t = DateTime.Now;
             const int N = 20;
             const int K = 18;
             int[] array = new int[N];
@@ -61,9 +81,12 @@ namespace Selection
                 if (array[i] == num)
                 { index = i; break; }
             }
+            //index = BinarySearch(array, num);
             if (index != -1)
             { Console.WriteLine("Position is {0}", index - 2); }
-            else Console.WriteLine("Number not found");
+            else Console.WriteLine("Number was not finded");
+            TimeSpan time = DateTime.Now - t;
+            Console.WriteLine("Time is {0}", time);
         }
     }
 }
