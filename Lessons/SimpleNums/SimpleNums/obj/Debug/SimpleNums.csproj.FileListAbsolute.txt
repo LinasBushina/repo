@@ -1,0 +1,6 @@
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\SimpleNums\SimpleNums\bin\Debug\SimpleNums.exe.config
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\SimpleNums\SimpleNums\bin\Debug\SimpleNums.exe
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\SimpleNums\SimpleNums\bin\Debug\SimpleNums.pdb
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\SimpleNums\SimpleNums\obj\Debug\SimpleNums.csprojResolveAssemblyReference.cache
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\SimpleNums\SimpleNums\obj\Debug\SimpleNums.exe
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\SimpleNums\SimpleNums\obj\Debug\SimpleNums.pdb
