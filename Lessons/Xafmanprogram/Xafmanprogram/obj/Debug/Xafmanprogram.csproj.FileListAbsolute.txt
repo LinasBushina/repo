@@ -4,3 +4,9 @@ C:\Users\Галина Бушина\Desktop\программирование\repo
 C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\Xafmanprogram\Xafmanprogram\obj\Debug\Xafmanprogram.csprojResolveAssemblyReference.cache
 C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\Xafmanprogram\Xafmanprogram\obj\Debug\Xafmanprogram.exe
 C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\Xafmanprogram\Xafmanprogram\obj\Debug\Xafmanprogram.pdb
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Xafmanprogram\Xafmanprogram\bin\Debug\Xafmanprogram.exe.config
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Xafmanprogram\Xafmanprogram\obj\Debug\Xafmanprogram.exe
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Xafmanprogram\Xafmanprogram\obj\Debug\Xafmanprogram.pdb
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Xafmanprogram\Xafmanprogram\obj\Debug\Xafmanprogram.csprojResolveAssemblyReference.cache
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Xafmanprogram\Xafmanprogram\bin\Debug\Xafmanprogram.exe
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Xafmanprogram\Xafmanprogram\bin\Debug\Xafmanprogram.pdb
