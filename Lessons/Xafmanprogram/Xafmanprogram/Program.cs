@@ -67,11 +67,13 @@ namespace Xafmanprogram
         static void Main(string[] args)
         {
             List<HuffmanElement> lst = new List<HuffmanElement>();
-            lst.Add(new HuffmanElement("A", 0.4));
-            lst.Add(new HuffmanElement("B", 0.2));
-            lst.Add(new HuffmanElement("C", 0.15));
-            lst.Add(new HuffmanElement("D", 0.15));
-            lst.Add(new HuffmanElement("E", 0.1));
+            Console.WriteLine("Enter the quantity of numbers: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+            for(int i = 0; i < num; i++)
+            {
+                lst.Add(new HuffmanElement("X" + i, Convert.ToDouble(Console.ReadLine())));
+            }
+            
             List<HuffmanElement> cloneLst = new List<HuffmanElement>(lst);
 
             int count = lst.Count - 1;
