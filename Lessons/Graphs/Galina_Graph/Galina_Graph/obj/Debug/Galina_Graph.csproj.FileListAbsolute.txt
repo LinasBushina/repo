@@ -1,0 +1,5 @@
+C:\Users\notebook\Desktop\Репетиторство\Алексей Лунев\new\Диффуры\2\Galina_Graph\Galina_Graph\bin\Debug\Galina_Graph.exe.config
+C:\Users\notebook\Desktop\Репетиторство\Алексей Лунев\new\Диффуры\2\Galina_Graph\Galina_Graph\bin\Debug\Galina_Graph.exe
+C:\Users\notebook\Desktop\Репетиторство\Алексей Лунев\new\Диффуры\2\Galina_Graph\Galina_Graph\bin\Debug\Galina_Graph.pdb
+C:\Users\notebook\Desktop\Репетиторство\Алексей Лунев\new\Диффуры\2\Galina_Graph\Galina_Graph\obj\Debug\Galina_Graph.exe
+C:\Users\notebook\Desktop\Репетиторство\Алексей Лунев\new\Диффуры\2\Galina_Graph\Galina_Graph\obj\Debug\Galina_Graph.pdb
