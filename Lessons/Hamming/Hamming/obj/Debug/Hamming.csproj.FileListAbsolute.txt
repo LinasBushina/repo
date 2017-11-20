@@ -4,3 +4,9 @@ C:\Users\Галина Бушина\Desktop\программирование\repo
 C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\Hamming\Hamming\obj\Debug\Hamming.csprojResolveAssemblyReference.cache
 C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\Hamming\Hamming\obj\Debug\Hamming.exe
 C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\Hamming\Hamming\obj\Debug\Hamming.pdb
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Hamming\Hamming\bin\Debug\Hamming.exe.config
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Hamming\Hamming\obj\Debug\Hamming.exe
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Hamming\Hamming\obj\Debug\Hamming.pdb
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Hamming\Hamming\bin\Debug\Hamming.exe
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Hamming\Hamming\bin\Debug\Hamming.pdb
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Hamming\Hamming\obj\Debug\Hamming.csprojResolveAssemblyReference.cache

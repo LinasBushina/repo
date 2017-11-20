@@ -27,8 +27,7 @@ namespace Hamming
             else { a = 0; }
             return a;
         }
-
-        static void Main(string[] args)
+        static void oldCode()
         {
             Console.WriteLine("Put the quantity of numbers: ");
             int N = Convert.ToInt32(Console.ReadLine());
@@ -47,9 +46,9 @@ namespace Hamming
                 }
             }
             int[] array1 = new int[N];
-            array1[0] = summ (array[0],array[2],array[4],array[6]);
-            array1[1] = summ (array[1],array[2],array[5],array[6]);
-            array1[2] = summ (array[3], array[4], array[5], array[6]);
+            array1[0] = summ(array[0], array[2], array[4], array[6]);
+            array1[1] = summ(array[1], array[2], array[5], array[6]);
+            array1[2] = summ(array[3], array[4], array[5], array[6]);
             string X = "array[2]+array[1]+array[0]";
             int numx = 0;
             for (int i = 0; i < X.Length; i++)
@@ -59,6 +58,16 @@ namespace Hamming
             }
             int dec = Convert.ToInt32(X, 2);
             Console.WriteLine(dec);
+        }
+
+        static void Main(string[] args)
+        {
+            //DecodedMessage dm = new DecodedMessage("0100010000111101");
+            //DecodedMessage dm = new DecodedMessage("0011111001001000");
+            DecodedMessage dm = new DecodedMessage("0");
+            CodedMessage cm = new CodedMessage(dm);
+            Console.WriteLine(dm);
+            Console.WriteLine(cm);
         }
     }
 }
