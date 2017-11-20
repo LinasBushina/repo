@@ -3,3 +3,9 @@ C:\Users\notebook\Desktop\Репетиторство\Алексей Лунев\n
 C:\Users\notebook\Desktop\Репетиторство\Алексей Лунев\new\Диффуры\2\Galina_Graph\Galina_Graph\bin\Debug\Galina_Graph.pdb
 C:\Users\notebook\Desktop\Репетиторство\Алексей Лунев\new\Диффуры\2\Galina_Graph\Galina_Graph\obj\Debug\Galina_Graph.exe
 C:\Users\notebook\Desktop\Репетиторство\Алексей Лунев\new\Диффуры\2\Galina_Graph\Galina_Graph\obj\Debug\Galina_Graph.pdb
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\Graphs\Galina_Graph\Galina_Graph\bin\Debug\Galina_Graph.exe.config
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\Graphs\Galina_Graph\Galina_Graph\bin\Debug\Galina_Graph.exe
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\Graphs\Galina_Graph\Galina_Graph\bin\Debug\Galina_Graph.pdb
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\Graphs\Galina_Graph\Galina_Graph\obj\Debug\Galina_Graph.csprojResolveAssemblyReference.cache
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\Graphs\Galina_Graph\Galina_Graph\obj\Debug\Galina_Graph.exe
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\Graphs\Galina_Graph\Galina_Graph\obj\Debug\Galina_Graph.pdb
