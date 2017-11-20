@@ -1,0 +1,6 @@
+C:\Users\Галина Бушина\Desktop\программирование\repo\h\h\bin\Debug\h.exe.config
+C:\Users\Галина Бушина\Desktop\программирование\repo\h\h\bin\Debug\h.exe
+C:\Users\Галина Бушина\Desktop\программирование\repo\h\h\bin\Debug\h.pdb
+C:\Users\Галина Бушина\Desktop\программирование\repo\h\h\obj\Debug\h.csprojResolveAssemblyReference.cache
+C:\Users\Галина Бушина\Desktop\программирование\repo\h\h\obj\Debug\h.exe
+C:\Users\Галина Бушина\Desktop\программирование\repo\h\h\obj\Debug\h.pdb

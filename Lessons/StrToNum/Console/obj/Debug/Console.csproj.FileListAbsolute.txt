@@ -10,3 +10,9 @@ C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\�
 C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\StrToNum\Console\bin\Debug\Console.exe
 C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\StrToNum\Console\bin\Debug\Console.pdb
 C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\StrToNum\Console\obj\Debug\Console.csprojResolveAssemblyReference.cache
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\StrToNum\Console\bin\Debug\Console.exe.config
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\StrToNum\Console\bin\Debug\Console.exe
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\StrToNum\Console\bin\Debug\Console.pdb
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\StrToNum\Console\obj\Debug\Console.csprojResolveAssemblyReference.cache
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\StrToNum\Console\obj\Debug\Console.exe
+C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\StrToNum\Console\obj\Debug\Console.pdb

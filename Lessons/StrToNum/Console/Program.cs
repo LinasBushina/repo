@@ -10,7 +10,7 @@ namespace Console
     {
         static void Main(string[] args)
         {
-            string str = "567";
+            string str = "011";
             int num = 0;
             for (int i = 0; i < str.Length; i++)
             {
