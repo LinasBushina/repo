@@ -62,12 +62,64 @@ namespace Hamming
 
         static void Main(string[] args)
         {
-            //DecodedMessage dm = new DecodedMessage("0100010000111101");
+            Test3();
+        }
+
+        static void Test1()
+        {
+            DecodedMessage dm = new DecodedMessage("0100010000111101");
             //DecodedMessage dm = new DecodedMessage("0011111001001000");
-            DecodedMessage dm = new DecodedMessage("0");
             CodedMessage cm = new CodedMessage(dm);
+            DecodedMessage dm_back = new DecodedMessage(cm);
             Console.WriteLine(dm);
             Console.WriteLine(cm);
+            Console.WriteLine(dm_back);
+            if (dm.ToString() == dm_back.ToString())
+            { Console.WriteLine("All right!"); }
+            else Console.WriteLine("Houston, we have a problem");
+        }
+        static void Test2()
+        {
+            DecodedMessage dm = new DecodedMessage("0");
+            Console.WriteLine(dm);
+            CodedMessage cm = new CodedMessage(dm);
+            Console.WriteLine(cm);
+            cm.MakeFault(0);
+            Console.WriteLine(cm);
+            DecodedMessage dm_back = new DecodedMessage(cm);
+            Console.WriteLine(dm_back);
+            if (dm.ToString() == dm_back.ToString())
+            { Console.WriteLine("All right!"); }
+            else Console.WriteLine("Houston, we have a problem");
+        }
+        static void Test3()
+        {
+            //DecodedMessage dm = new DecodedMessage("0100010000111101");
+            DecodedMessage dm = new DecodedMessage("0011111001001000");
+            Console.WriteLine(dm);
+            CodedMessage cm = new CodedMessage(dm);
+            Console.WriteLine(cm);
+            cm.MakeFault(5);
+            Console.WriteLine(cm);
+            DecodedMessage dm_back = new DecodedMessage(cm);
+            Console.WriteLine(dm_back);
+            if (dm.ToString() == dm_back.ToString())
+            { Console.WriteLine("All right!"); }
+            else Console.WriteLine("Houston, we have a problem");
+        }
+        static void Test4()
+        {
+            DecodedMessage dm = new DecodedMessage("00");
+            Console.WriteLine(dm);
+            CodedMessage cm = new CodedMessage(dm);
+            Console.WriteLine(cm);
+            cm.MakeFault(3);
+            Console.WriteLine(cm);
+            DecodedMessage dm_back = new DecodedMessage(cm);
+            Console.WriteLine(dm_back);
+            if (dm.ToString() == dm_back.ToString())
+            { Console.WriteLine("All right!"); }
+            else Console.WriteLine("Houston, we have a problem");
         }
     }
 }

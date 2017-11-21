@@ -10,20 +10,15 @@ namespace Hamming
     {
         public CodedMessage(DecodedMessage msg)
         {
-            int msgLen = msg.GetLength();
-            double log = Math.Log(msgLen, 2.0f);
-            int controlCount = (int)log + 1;
-            int newLen = msgLen + controlCount;
-            bits = new int[newLen];
-            
-            
-            for (int i = 1, from = 0, contrl = 0; i <= newLen; i++)
+            int len = msg.GetLength();
+            for (int i = 1; i <= len; i++)
+            { if (IsPowerOfTwo(i)) len++; }
+            bits = new int[len];
+
+            for (int i = 1, from = 0; i <= len; i++)
             {
-                if (IsPowerOfTwo(i) && contrl < controlCount)
-                {
-                    bits[i - 1] = 0;
-                    contrl++;
-                }
+                if (IsPowerOfTwo(i))
+                { bits[i - 1] = 0; }
                 else
                 {
                     bits[i - 1] = msg.GetBit(from++);
@@ -33,11 +28,14 @@ namespace Hamming
                         if (bitStr[k] == '0') continue;
                         int power = bitStr.Length - k - 1;
                         int index = (int)Math.Pow(2, power) - 1;
-                        bits[index] += bits[index];
+                        bits[index] += bits[i - 1];
                         bits[index] %= 2;
                     }
                 }
             }
         }
+
+        public void MakeFault(int index)
+        { bits[index] ^= 1; }
     }
 }
