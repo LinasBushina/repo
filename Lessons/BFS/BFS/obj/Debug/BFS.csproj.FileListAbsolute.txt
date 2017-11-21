@@ -1,0 +1,6 @@
+C:\Users\notebook\Desktop\Репетиторство\Алексей Лунев\new\Диффуры\2\BFS\BFS\bin\Debug\BFS.exe.config
+C:\Users\notebook\Desktop\Репетиторство\Алексей Лунев\new\Диффуры\2\BFS\BFS\obj\Debug\BFS.csprojResolveAssemblyReference.cache
+C:\Users\notebook\Desktop\Репетиторство\Алексей Лунев\new\Диффуры\2\BFS\BFS\bin\Debug\BFS.exe
+C:\Users\notebook\Desktop\Репетиторство\Алексей Лунев\new\Диффуры\2\BFS\BFS\bin\Debug\BFS.pdb
+C:\Users\notebook\Desktop\Репетиторство\Алексей Лунев\new\Диффуры\2\BFS\BFS\obj\Debug\BFS.exe
+C:\Users\notebook\Desktop\Репетиторство\Алексей Лунев\new\Диффуры\2\BFS\BFS\obj\Debug\BFS.pdb
