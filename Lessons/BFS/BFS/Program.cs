@@ -10,11 +10,28 @@ namespace BFS
     {
         static void Main(string[] args)
         {
+            Test2();
+        }
+
+        static void Test1()
+        {
             AdjacencyMatrixGraph g = new AdjacencyMatrixGraph(6);
             g.AddEdge(0, 1); g.AddEdge(0, 2); g.AddEdge(1, 3);
-            g.AddEdge(1, 4); g.AddEdge(4, 5);
-            foreach (var node in TraversalGraph.BFS(0, g))
+            g.AddEdge(1, 4); g.AddEdge(4, 5); //g.AddEdge(2, 4);
+            foreach (var pair in TraversalGraph.BFSwithTier(0, g))
+            { Console.WriteLine("{0} - {1}", pair.Item1, pair.Item2); }
+            Console.WriteLine();
+            foreach (var node in TraversalGraph.DFS(0, g))
             { Console.WriteLine(node); }
+        }
+        static void Test2()
+        {
+            AdjacencyMatrixGraph g = new AdjacencyMatrixGraph(6);
+            g.AddEdge(0, 1); g.AddEdge(0, 2); g.AddEdge(0, 3);
+            g.AddEdge(0, 5); g.AddEdge(1, 2); g.AddEdge(2, 3);
+            g.AddEdge(3, 4); g.AddEdge(4, 5);
+            foreach (var pair in TraversalGraph.BFSwithTier(0, g))
+            { Console.WriteLine("{0} - {1}", pair.Item1, pair.Item2); }
             Console.WriteLine();
             foreach (var node in TraversalGraph.DFS(0, g))
             { Console.WriteLine(node); }

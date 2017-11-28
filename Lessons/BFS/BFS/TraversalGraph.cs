@@ -17,7 +17,7 @@ namespace BFS
             visited[startVertex] = true;
             path.Add(startVertex);
 
-            while (q .Count!= 0)
+            while (q.Count!= 0)
             {
                 int node = q.Dequeue();
                 foreach (var child in g.GetNeighbors(node))
@@ -27,6 +27,34 @@ namespace BFS
                         q.Enqueue(child);
                         visited[child] = true;
                         path.Add(child);
+                    }
+                }
+            }
+
+            return path;
+        }
+
+        public static List<Tuple<int, int>> BFSwithTier(int startVertex, AdjacencyMatrixGraph g)
+        {
+            List<Tuple<int, int>> path = new List<Tuple<int, int>>();
+            bool[] visited = new bool[g.GetCountVertexes()];
+            Queue<Tuple<int, int>> q = new Queue<Tuple<int, int>>();
+            q.Enqueue(Tuple.Create(startVertex, 0));
+            visited[startVertex] = true;
+            path.Add(Tuple.Create(startVertex, 0));
+
+            while (q.Count != 0)
+            {
+                Tuple<int, int> pair = q.Dequeue();
+                int node = pair.Item1;
+                int tier = pair.Item2;
+                foreach (var child in g.GetNeighbors(node))
+                {
+                    if (!visited[child])
+                    {
+                        q.Enqueue(Tuple.Create(child, tier + 1));
+                        visited[child] = true;
+                        path.Add(Tuple.Create(child, tier + 1));
                     }
                 }
             }
