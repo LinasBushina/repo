@@ -1,1 +1,6 @@
 C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\CyclicCode\CyclicCode\CyclicCode\bin\Debug\CyclicCode.exe.config
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\CyclicCode\CyclicCode\CyclicCode\bin\Debug\CyclicCode.exe
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\CyclicCode\CyclicCode\CyclicCode\bin\Debug\CyclicCode.pdb
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\CyclicCode\CyclicCode\CyclicCode\obj\Debug\CyclicCode.csprojResolveAssemblyReference.cache
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\CyclicCode\CyclicCode\CyclicCode\obj\Debug\CyclicCode.exe
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\CyclicCode\CyclicCode\CyclicCode\obj\Debug\CyclicCode.pdb
