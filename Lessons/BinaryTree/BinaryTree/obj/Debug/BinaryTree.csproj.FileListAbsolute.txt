@@ -1,1 +1,7 @@
 C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\CyclicCode\BinaryTree\BinaryTree\bin\Debug\BinaryTree.exe.config
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\BinaryTree\BinaryTree\bin\Debug\BinaryTree.exe.config
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\BinaryTree\BinaryTree\bin\Debug\BinaryTree.exe
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\BinaryTree\BinaryTree\bin\Debug\BinaryTree.pdb
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\BinaryTree\BinaryTree\obj\Debug\BinaryTree.csprojResolveAssemblyReference.cache
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\BinaryTree\BinaryTree\obj\Debug\BinaryTree.exe
+C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\BinaryTree\BinaryTree\obj\Debug\BinaryTree.pdb
