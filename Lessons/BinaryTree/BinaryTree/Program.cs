@@ -58,7 +58,54 @@ namespace BinaryTree
         }
         static void Main(string[] args)
         {
-            Test1();
+            BinaryTree tree = new BinaryTree();
+
+            Console.WriteLine("Enter \"add <value>\" to add node;");
+            Console.WriteLine("Enter \"find <value>\" to find node;");
+            Console.WriteLine("Enter \"remove <value>\" to remove node;");
+            Console.WriteLine("Enter \"pre\" to PreOrder traversal;");
+            Console.WriteLine("Enter \"in\" to InOrder traversal;");
+            Console.WriteLine("Enter \"post\" to PostOrder traversal;");
+            Console.WriteLine("Enter \"exit\" to terminate a programm.");
+            do
+            {
+                Console.Write("Enter command: ");
+                string command = Console.ReadLine();
+                string[] data = command.Split(new char[] {' '},
+                    StringSplitOptions.RemoveEmptyEntries);
+                switch (data[0])
+                {
+                    case "add":
+                    case "find":
+                    case "remove":
+                        if (data.Length != 2)
+                        { Console.WriteLine("Invalid parameters count"); break; }
+                        int value; bool isParse = int.TryParse(data[1], out value);
+                        if (!isParse)
+                        { Console.WriteLine("Not valid number"); break; }
+                        if (data[0] == "add") tree.Add(new Node(value));
+                        else if (data[0] == "find")
+                        {
+                            Node node = tree.Find(value);
+                            if (node != null)
+                            { Console.WriteLine("Found {0} node", node.GetKey()); }
+                            else  Console.WriteLine("Node not found"); 
+                        }
+                        else
+                        {
+                            Node node = tree.Remove(value);
+                            if (node != null)
+                            { Console.WriteLine("Removed {0} node", node.GetKey()); }
+                            else Console.WriteLine("Node not found"); 
+                        }
+                        break;
+                    case "pre": tree.PreOrderTraversal(); break;
+                    case "in": tree.InOrderTraversal(); break;
+                    case "post": tree.PostOrderTraversal(); break;
+                    case "exit": return;
+                    default: Console.WriteLine("Command is not recognised"); break;
+                }
+            } while (true);
         }
     }
 }
