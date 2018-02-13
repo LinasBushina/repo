@@ -187,6 +187,7 @@ namespace PasswordDoc
                             ref missing,
                             ref missing);
                 ((_Document)doc).Close(ref missing, ref missing, ref missing);
+                //((_Document)doc).Close(Word.WdSaveOptions.wdDoNotSaveChanges);
                 Marshal.ReleaseComObject(doc);
                 Marshal.ReleaseComObject(app);
             }
