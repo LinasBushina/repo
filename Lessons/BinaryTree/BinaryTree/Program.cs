@@ -89,14 +89,14 @@ namespace BinaryTree
                             Node node = tree.Find(value);
                             if (node != null)
                             { Console.WriteLine("Found {0} node", node.GetKey()); }
-                            else  Console.WriteLine("Node not found"); 
+                            else  Console.WriteLine("Node is not found"); 
                         }
                         else
                         {
                             Node node = tree.Remove(value);
                             if (node != null)
                             { Console.WriteLine("Removed {0} node", node.GetKey()); }
-                            else Console.WriteLine("Node not found"); 
+                            else Console.WriteLine("Node is not found"); 
                         }
                         break;
                     case "pre": tree.PreOrderTraversal(); break;
