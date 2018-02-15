@@ -3,7 +3,7 @@ import re
 text = \
 """
 Hello, my friend, text me at gibson.mail.com and
-my cherrie at ketty.gmail.net. bla bla bla
+my cherrie at ketty.gmail.net bla bla bla
 i like site cats.ru and wikipedia.org
 marko-polo.com
 xn--h1aaf0ab0e.com
