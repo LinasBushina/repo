@@ -1,5 +1,12 @@
-﻿Build started 2/15/2018 10:16:39 PM.
+﻿Build started 2/20/2018 9:26:55 PM.
+     1>Project "C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\Asm_prime_numbers\Asm_prime_numbers\Asm_prime_numbers.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\Asm_prime_numbers\Debug\Asm_prime_numbers.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\Asm_prime_numbers\Debug\Asm_prime_numbers.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\Asm_prime_numbers\Debug\Asm_prime_numbers.lib" /MACHINE:X86 Debug\foo.obj
+         Debug\sort_array.obj
+     1>sort_array.obj : error LNK2005: _main already defined in foo.obj
+     1>C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\Asm_prime_numbers\Debug\Asm_prime_numbers.exe : fatal error LNK1169: one or more multiply defined symbols found
+     1>Done Building Project "C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\Asm_prime_numbers\Asm_prime_numbers\Asm_prime_numbers.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:00.09
+Time Elapsed 00:00:00.27
