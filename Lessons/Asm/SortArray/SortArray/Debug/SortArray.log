@@ -1,14 +1,2 @@
-﻿Build started 2/20/2018 10:28:44 PM.
-     1>Project "C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\SortArray\SortArray\SortArray.vcxproj" on node 2 (Build target(s)).
-     1>_MASM:
-         Assembling sort_array.asm...
-         cmd.exe /C "C:\Users\notebook\AppData\Local\Temp\tmpfb3d90ce2d794e7ea5e0e2c8d96e68f7.cmd"
-         ml.exe /c /nologo /Zi /Fo"Debug\sort_array.obj" /W3 /errorReport:prompt  /Tasort_array.asm
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\SortArray\Debug\SortArray.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\SortArray\Debug\SortArray.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\SortArray\Debug\SortArray.lib" /MACHINE:X86 Debug\sort_array.obj
-         SortArray.vcxproj -> C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\SortArray\Debug\SortArray.exe
-     1>Done Building Project "C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\SortArray\SortArray\SortArray.vcxproj" (Build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:00.48
+﻿  Assembling sort_array.asm...
+  SortArray.vcxproj -> C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\Asm\SortArray\Debug\SortArray.exe
