@@ -1,14 +1,2 @@
-﻿Build started 3/6/2018 10:37:09 PM.
-     1>Project "C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\TranslationNumberSystems\TranslationNumberSystems\TranslationNumberSystems.vcxproj" on node 2 (Build target(s)).
-     1>_MASM:
-         Assembling Translation.asm...
-         cmd.exe /C "C:\Users\notebook\AppData\Local\Temp\tmpe0097c7acb204751bb424a8f9537b34c.cmd"
-         ml.exe /c /nologo /Zi /Fo"Debug\Translation.obj" /W3 /errorReport:prompt  /TaTranslation.asm
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\TranslationNumberSystems\Debug\TranslationNumberSystems.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\TranslationNumberSystems\Debug\TranslationNumberSystems.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\TranslationNumberSystems\Debug\TranslationNumberSystems.lib" /MACHINE:X86 Debug\Translation.obj
-         TranslationNumberSystems.vcxproj -> C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\TranslationNumberSystems\Debug\TranslationNumberSystems.exe
-     1>Done Building Project "C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\TranslationNumberSystems\TranslationNumberSystems\TranslationNumberSystems.vcxproj" (Build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:00.75
+﻿  Assembling Translation.asm...
+  TranslationNumberSystems.vcxproj -> C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\Asm\TranslationNumberSystems\Debug\TranslationNumberSystems.exe
