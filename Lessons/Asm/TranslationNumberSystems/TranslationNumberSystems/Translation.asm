@@ -4,8 +4,9 @@ includelib libcmt.lib
 .model flat, c
 .stack 4096
 printf proto, pString : ptr byte, args : vararg
-scanf proto, pString : ptr byte, arg : ptr byte
+scanf proto, pString : ptr byte, args : ptr byte
 strlen proto, pString : ptr byte
+strcat proto, dest : ptr byte, src : ptr byte
 
 .data
 fsEnterNum db "Enter num: ", 0
@@ -22,6 +23,9 @@ sum dd 0
 pow dd 1
 index dd ?
 len dd ?
+bufflag db 0
+resbuf_1 db 50 dup(0)
+resbuf_2 db 50 dup(0)
 
 .code
 public main
@@ -87,6 +91,65 @@ main proc
 
 	invoke printf, addr fsPrintNum, sum
 
+	convert_to:
+	mov eax, [sum]
+	mov ebx, [to]
+	xor edx, edx
+	div ebx									;mod in edx, div in eax
+	
+	mov [sum], eax
+	mov [digit], edx
+	cmp edx, 9
+	jg buf_hex
+
+	buf_dec:
+	mov eax, [digit]
+	add eax, 48
+	jmp concat_digit
+
+	buf_hex:
+	mov eax, [digit]
+	add eax, 55
+
+	concat_digit:
+	mov [digit], eax
+	cmp bufflag, 0
+	jne resbuf_two
+
+	resbuf_one:
+	mov eax, [digit]
+	mov [resbuf_1], al
+	mov [resbuf_1 + 1], 0
+	invoke strcat, addr resbuf_1, addr resbuf_2
+	jmp check_sum
+
+	resbuf_two:
+	mov eax, [digit]
+	mov [resbuf_2], al
+	mov [resbuf_2 + 1], 0
+	invoke strcat, addr resbuf_2, addr resbuf_1
+
+	check_sum:
+	mov eax, 1
+	sub al, bufflag
+	mov [bufflag], al
+	
+	mov eax, [sum]
+	cmp eax, 0
+	jne convert_to
+
+	print_ast_to:
+	cmp bufflag, 0
+	jne print_res_2
+
+	print_res_1:
+	invoke printf, addr fsScanfNum, addr resbuf_2
+	jmp endret
+
+	print_res_2:
+	invoke printf, addr fsScanfNum, addr resbuf_1
+
+	endret:
 	ret
 main endp
 end
