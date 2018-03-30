@@ -82,6 +82,9 @@
   <ItemGroup>
     <MASM Include="sort_array.asm" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="measure_arr.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />

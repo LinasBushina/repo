@@ -10,3 +10,4 @@ ConsoleApplication1.csproj.FileListAbsolute.txt
 ConsoleApplication1.csprojResolveAssemblyReference.cache
 ConsoleApplication1.pdb
 *.db
+/Lessons/Asm/MeasureTimeSortArray/*.sdf
