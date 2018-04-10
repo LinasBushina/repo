@@ -56,20 +56,17 @@
 //    return 0;
 //}
 
-int WINAPI WinMain(HINSTANCE hInst,
-                   HINSTANCE hPreviousInst,
-                   LPSTR lpCommandLine,
-                   int nCommandShow
-               )
-{
-	int result = MessageBox(NULL, "Вам нравится WINAPI?!", "Задача",
-							MB_ICONQUESTION | MB_YESNO);
-	switch (result)
-	{
-	case IDYES: MessageBox (NULL, "Продолжайте в том же духе!!!",
-						"Ответ", MB_OK| MB_ICONASTERISK); break;
-	case IDNO:  MessageBox (NULL, "Очень жаль!!!", "Ответ",
-						MB_OK| MB_ICONSTOP); break;
-	}
-	return NULL;
-}
+//int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPreviousInst,
+//                   LPSTR lpCommandLine, int nCommandShow )
+//{
+//	int result = MessageBox(NULL, "Вам нравится WINAPI?!", "Задача",
+//							MB_ICONQUESTION | MB_YESNO);
+//	switch (result)
+//	{
+//	case IDYES: MessageBox (NULL, "Продолжайте в том же духе!!!",
+//						"Ответ", MB_OK| MB_ICONASTERISK); break;
+//	case IDNO:  MessageBox (NULL, "Очень жаль!!!", "Ответ",
+//						MB_OK| MB_ICONSTOP); break;
+//	}
+//	return NULL;
+//}
