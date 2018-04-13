@@ -11,3 +11,4 @@ ConsoleApplication1.csprojResolveAssemblyReference.cache
 ConsoleApplication1.pdb
 *.db
 /Lessons/Asm/MeasureTimeSortArray/*.sdf
+/Lessons/WinAPI/SytemTray/*.sdf
