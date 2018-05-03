@@ -6,15 +6,15 @@ using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	int size = 1000;
+	auto start_time = chrono::high_resolution_clock::now();
+	int start_time_int = chrono::duration_cast<chrono::milliseconds>(start_time.time_since_epoch()).count();
+	int size = 30000;
 	int *arr = new int[size];
 	for (int i = 0; i < size; i++)
 	{ arr[i] = size - i; }
 	for (int i = 0; i < 10 && i < size; i++)
 	{ printf("%d ", arr[i]); }
 	printf("\n");
-	auto start_time = chrono::high_resolution_clock::now();
-	int start_time_int = chrono::duration_cast<chrono::nanoseconds>(start_time.time_since_epoch()).count();
 	for (int i = 0; i < size; i++)
 	{
 		for (int j = 0; j < size - 1; j++)
@@ -27,8 +27,11 @@ int _tmain(int argc, _TCHAR* argv[])
 			}
 		}
 	}
+	for (int i = 0; i < 10 && i < size; i++)
+	{ printf("%d ", arr[i]); }
+	printf("\n");
 	auto end_time = std::chrono::high_resolution_clock::now();
-	int end_time_int = chrono::duration_cast<chrono::nanoseconds>(end_time.time_since_epoch()).count();
+	int end_time_int = chrono::duration_cast<chrono::milliseconds>(end_time.time_since_epoch()).count();
 	delete[] arr;
 	/*auto used_time = end_time - start_time;
 	long long used_time_l = chrono::duration_cast<chrono::nanoseconds>(used_time).count();

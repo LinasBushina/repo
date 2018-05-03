@@ -15,5 +15,6 @@ int* create_arr(int size)
 int get_time()
 {
 	auto now_time = chrono::high_resolution_clock::now();
-	return chrono::duration_cast<chrono::nanoseconds>(now_time.time_since_epoch()).count();
+	int res = chrono::duration_cast<chrono::milliseconds>(now_time.time_since_epoch()).count();
+	return res;
 }

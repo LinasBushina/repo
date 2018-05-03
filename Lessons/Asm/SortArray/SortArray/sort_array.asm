@@ -13,13 +13,16 @@ count dd 0									; counter
 flag db 0
 formatStr db "%d", 0dh, 0ah, 0				; printf format string
 formatStrDahes db "-----", 0dh, 0ah, 0
-arr_size dd 1000
+arr_size dd 30000
 arr_addr dd	?	
 start_time dd ?
 
 .code
 public main
 main proc
+	invoke get_time
+	mov [start_time], eax
+
 	invoke create_arr, arr_size
 	mov [arr_addr], eax
 
@@ -31,11 +34,9 @@ main proc
 	mov eax, [edi + ebx * 4]					; get number from array / кладем в регистр edi - начало, ebx - счетчик кладем текущий элемент и печатаем 
 	invoke printf, addr formatStr, eax		; печатаем его 
 
-	invoke get_time
-	mov [start_time], eax
-
 	inc ebx									; ++
-	cmp ebx, [arr_size]					; сравниваем счетчик и длину массива, lengthof - возвращает длину массиива
+	;cmp ebx, [arr_size]					; сравниваем счетчик и длину массива, lengthof - возвращает длину массиива
+	cmp ebx, 10
 	jne print_step							; прыжок 
 	cmp flag, 0								; сравниваем флажок с нулем чтобы 
 	jne exit
@@ -68,7 +69,7 @@ main proc
 
 	invoke printf, addr formatStrDahes		; печать
 	mov [flag], 1							; запись 1 так как все уже прошлися
-	;jmp print_arr							; прыгаемс ввэрх 
+	jmp print_arr							; прыгаемс ввэрх 
 
 	exit:
 	invoke printf, addr formatStrDahes
