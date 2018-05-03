@@ -9,6 +9,7 @@
 HINSTANCE hInst;								// current instance
 TCHAR szTitle[MAX_LOADSTRING];					// The title bar text
 TCHAR szWindowClass[MAX_LOADSTRING];			// the main window class name
+HWND textBox;
 
 // Forward declarations of functions included in this code module:
 ATOM				MyRegisterClass(HINSTANCE hInstance);
@@ -130,6 +131,12 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 	switch (message)
 	{
+	case WM_CREATE:
+	{
+		textBox = CreateWindow(L"EDIT", L"",
+			WS_BORDER | WS_CHILD | WS_VISIBLE,
+			10, 10, 400, 20, hWnd, NULL, NULL, NULL);
+	}
 	case WM_TRAYMESSAGE:
 		switch (lParam)
 		{
@@ -150,7 +157,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		HKEY rKey;
 		char old_value[64];
 		DWORD old_valueSize = sizeof(old_value);
-		wchar_t new_value[64] = L"123";
+		//wchar_t new_value[64] = L"123";
+		wchar_t new_value[64];
+		GetWindowText(textBox, (LPWSTR)&new_value, 64);
 		DWORD new_valueSize = sizeof(new_value);
 		RegOpenKeyEx(HKEY_CURRENT_USER, L"Software\\MyRegTest", 0, KEY_ALL_ACCESS | KEY_WOW64_64KEY, &rKey);
 		RegQueryValueEx(rKey, L"MyRegValue", NULL, NULL, (LPBYTE)old_value, &old_valueSize);
