@@ -132,7 +132,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	switch (message)
 	{
 	case WM_CREATE:
-	{
+	{	
 		textBox = CreateWindow(L"EDIT", L"",
 			WS_BORDER | WS_CHILD | WS_VISIBLE,
 			10, 10, 400, 20, hWnd, NULL, NULL, NULL);
@@ -167,7 +167,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		RegCloseKey(rKey);
 
 		HINSTANCE hInstance = GetModuleHandle(NULL);
-		MessageBox(hWnd, (LPCWSTR)old_value, L"Register last value:", MB_OK | MB_ICONINFORMATION);
+		//MessageBox(hWnd, (LPCWSTR)old_value, L"Register last value:", MB_OK | MB_ICONINFORMATION);
+		MessageBox(hWnd, L"Press OK", L"New value registered", MB_OK | MB_ICONINFORMATION);
 		break;
 	}
 	case WM_LBUTTONDOWN:
