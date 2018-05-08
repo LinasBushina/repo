@@ -12,3 +12,4 @@ ConsoleApplication1.pdb
 *.db
 /Lessons/Asm/MeasureTimeSortArray/*.sdf
 /Lessons/WinAPI/SytemTray/*.sdf
+/Lessons/Asm/Archiving/*.sdf
