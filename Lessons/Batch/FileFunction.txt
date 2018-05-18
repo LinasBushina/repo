@@ -1,0 +1,22 @@
+@echo off
+Setlocal EnableDelayedExpansion
+set /a x=%4% - 1
+set str=%3%
+set /a len=%4%
+set "str2=!str:~0,%x%!"
+set "str1=!str:~%len%!"
+set "str3=%str2%*%str1%"
+set "str4=C:\lab4\%str3%"
+IF "%1"=="all" (IF "%2" == "content" for %%f in (C:\lab4\*.*) do TYPE %%f)
+IF "%1"=="all" (IF "%2" == "name" for %%f in (C:\lab4\*.*) do dir /b %%f)
+IF "%1"=="byname" (IF "%2" == "name" for %%f in (C:\lab4\%3.*) do dir /b %%f)
+IF "%1"=="byname" (IF "%2" == "content" for %%f in (C:\lab4\%3.*) do TYPE %%f)
+IF "%1"=="byext" (IF "%2" == "content" for %%f in (C:\lab4\*.%3) do TYPE %%f)
+IF "%1"=="byext" (IF "%2" == "name" for %%f in (C:\lab4\*.%3) do dir /b %%f)
+IF "%1"=="bynsym" (IF "%2" == "name" for %%f in (C:\lab4\*.*) do (
+call C:\Function.bat %%f %3 %4))
+IF "%1"=="bynsym" (IF "%2" == "content" for %%f in (C:\lab4\*.*) do (
+call C:\Function1.bat %%f %3 %4))
+
+IF "%1"=="bynx" (IF "%2" == "name" for %%f in (%str4%) do ( dir /b %%f) )
+IF "%1"=="bynx" (IF "%2" == "content" for %%f in (%str4%) do ( TYPE %%f) )

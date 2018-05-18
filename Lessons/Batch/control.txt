@@ -1,0 +1,25 @@
+echo "1:"
+call C:\FileFunction.bat all content > D:\result.txt
+type D:\result.txt
+TIMEOUT /T 10 /NOBREAK 
+del D:\result.txt
+echo "2:"
+call C:\FileFunction.bat byname name new > D:\result.txt
+type D:\result.txt
+TIMEOUT /T 10 /NOBREAK 
+del D:\result.txt
+echo "3:"
+call C:\FileFunction.bat byext content txt > D:\result.txt
+type D:\result.txt
+TIMEOUT /T 10 /NOBREAK
+del D:\result.txt
+echo "4:"
+call C:\FileFunction.bat bynsym name a 1 > D:\result.txt
+type D:\result.txt
+TIMEOUT /T 10 /NOBREAK 
+del D:\result.txt
+echo "5:"
+call C:\FileFunction.bat bynx name naw.txt 2 > D:\result.txt
+type D:\result.txt
+TIMEOUT /T 10 /NOBREAK 
+del D:\result.txt
