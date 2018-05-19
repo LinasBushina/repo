@@ -1,0 +1,4 @@
+//сортировка (сложная)
+https://www.codeproject.com/Articles/20307/Advanced-Batch-File-Techniques-Part-Bubble-Sort
+//туторил по основам Batch
+https://o7planning.org/ru/11601/arrays-in-batch-scripting-language
