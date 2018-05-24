@@ -6,3 +6,5 @@ https://o7planning.org/ru/11601/arrays-in-batch-scripting-language
 https://stackoverflow.com/questions/5837418/how-do-you-get-the-string-length-in-a-batch-file
 //echo without newline
 https://stackoverflow.com/questions/7105433/windows-batch-echo-without-new-line
+//сравнивать числа через zero pad left
+https://stackoverflow.com/questions/9116365/windows-batch-file-if-failure-how-can-30000000000000-equal-40000000000
