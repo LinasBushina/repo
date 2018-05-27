@@ -8,8 +8,8 @@ include win32.inc
 
 endl equ <0dh, 0ah>
 
-inputFilePath byte "test.bmp", 0
-outputFilePath byte "test2.bmp", 0
+inputFilePath byte "simple_in.bmp", 0
+outputFilePath byte "simple_out.bmp", 0
 
 hInput dword ?
 hStdOut dword ?
@@ -57,48 +57,47 @@ main proc
 	.endif
 	mov hOutputFILE, eax
 
-	INVOKE ReadFile, hInput,addr buf, 54, NULL, NULL
-	INVOKE WriteFile, hOutputFILE,addr buf, 54, NULL, NULL
+	INVOKE ReadFile, hInput, addr buf, 54, NULL, NULL
+	INVOKE WriteFile, hOutputFILE, addr buf, 54, NULL, NULL
 
-	mov ecx,DWORD ptr[buf+34]
-	mov esi,ecx
+	mov ecx, DWORD ptr[buf+34]
+	mov esi, ecx
 
-	xor ecx,ecx
+	xor ecx, ecx
 	.WHILE countForWhile != esi
-		INVOKE ReadFile, hInput,addr foo, 1, NULL, NULL
+		INVOKE ReadFile, hInput, addr foo, 1, NULL, NULL
+		INVOKE WriteFile, hOutputFILE, addr foo, 1, NULL, NULL
 		inc countForWhile
-		inc count
-		.IF count == 3
+		;inc count
+		;.IF count == 3
+		;	mov count, 0
+		;	xor ebx, ebx
+		;	xor eax, eax
 
-			
-			mov count,0
-			xor ebx,ebx
-			xor eax,eax
+		;	finit
 
-			finit
+		;	mov bl, [foo]
+		;	mov number1, ebx
+		;	fild number1
+		;	mov al, [foo+1]
+		;	mov number2, eax
+		;	fiadd number2
 
-			mov bl,[foo]
-			mov number1,ebx
-			fild number1
-			mov al,[foo+1]
-			mov number2,eax
-			fiadd number2
+		;	xor eax, eax
+		;	mov al, [foo+2]
+		;	mov number2, eax
+		;	fiadd number2
 
-			xor eax,eax
-			mov al,[foo+2]
-			mov number2,eax
-			fiadd number2
+		;	fidiv number3
 
-			fidiv number3
+		;	fist number2
+		;	mov bl, byte ptr[number2]
+		;	mov [foo], bl
+		;	mov [foo+1], bl
+		;	mov [foo+2], bl
 
-			fist number2
-			mov bl, byte ptr[number2]
-			mov [foo],bl
-			mov [foo+1],bl
-			mov [foo+2],bl
-
-			INVOKE WriteFile, hOutputFILE,addr foo, 3, NULL, NULL
-		.endif
+		;	INVOKE WriteFile, hOutputFILE,addr foo, 3, NULL, NULL
+		;.endif
 	.endw
 
 	invoke CloseHandle, hOutputFILE
