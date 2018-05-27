@@ -1,2 +1,2 @@
 ﻿  SytemTray.cpp
-  SytemTray.vcxproj -> C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\WinAPI\SytemTray\Debug\SytemTray.exe
+c:\users\галина бушина\desktop\программирование\repo\repo\lessons\winapi\sytemtray\sytemtray\sytemtray.cpp(1): fatal error C1041: невозможно открыть базу данных программы c:\users\галина бушина\desktop\программирование\repo\repo\lessons\winapi\sytemtray\sytemtray\debug\vc120.idb; если несколько файлов CL.EXE осуществляют запись в один и тот же PDB-файл, воспользуйтесь /FS
