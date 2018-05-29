@@ -8,8 +8,8 @@ include win32.inc
 
 endl equ <0dh, 0ah>
 
-inputFilePath byte "test.bmp", 0
-outputFilePath byte "test_out.bmp", 0
+inputFilePath byte "XING_B24.bmp", 0
+outputFilePath byte "XING_B24_out.bmp", 0
 
 hInput dword ?
 hStdOut dword ?
@@ -68,7 +68,7 @@ main proc
 	finit
 
 	xor ecx, ecx
-	.WHILE fileSize != esi
+	.WHILE fileSize <= esi
 		INVOKE ReadFile, hInput, addr r, 1, NULL, NULL
 		INVOKE ReadFile, hInput, addr g, 1, NULL, NULL
 		INVOKE ReadFile, hInput, addr b, 1, NULL, NULL

@@ -1,8 +1,8 @@
-﻿Build started 5/27/2018 9:15:30 PM.
+﻿Build started 5/29/2018 9:07:40 PM.
      1>Project "C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\lab5\GrayScale\ConsoleApplication1\ConsoleApplication1.vcxproj" on node 2 (Build target(s)).
      1>_MASM:
          Assembling main.asm...
-         cmd.exe /C "C:\Users\notebook\AppData\Local\Temp\tmp5d9e360fa65341cd9a8a80f2bae70efe.cmd"
+         cmd.exe /C "C:\Users\notebook\AppData\Local\Temp\tmp3a77485850354727a22974b9e1963e3b.cmd"
          ml.exe /c /nologo /Zi /Fo"Debug\main.obj" /W3 /errorReport:prompt  /Tamain.asm
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\lab5\GrayScale\Debug\ConsoleApplication1.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\lab5\GrayScale\Debug\ConsoleApplication1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\notebook\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\lab5\GrayScale\Debug\ConsoleApplication1.lib" /MACHINE:X86 Debug\main.obj
@@ -11,4 +11,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.33
+Time Elapsed 00:00:00.31
