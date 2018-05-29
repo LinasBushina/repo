@@ -1,0 +1,16 @@
+CreateFileA   PROTO STDCALL :DWORD, :DWORD, :DWORD, :DWORD, :DWORD, :DWORD, :DWORD
+CloseHandle   PROTO STDCALL :DWORD
+GetStdHandle  PROTO STDCALL :DWORD
+WriteConsoleA PROTO STDCALL :DWORD,:DWORD,:DWORD,:DWORD,:DWORD
+ExitProcess   PROTO STDCALL :DWORD
+
+GENERIC_READ           equ 80000000h
+GENERIC_WRITE          equ 40000000h
+OPEN_EXISTING          equ 3
+FILE_ATTRIBUTE_NORMAL  equ 80h
+DO_NOT_SHARE           equ 0
+TRUE                   equ 1
+FALSE                  equ 0
+NULL                   equ 0
+INVALID_HANDLE_VALUE   equ -1
+STD_OUTPUT_HANDLE      equ -11
