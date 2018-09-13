@@ -11,12 +11,12 @@ endl equ <0dh, 0ah>
 inputFilePath byte "XING_B24.bmp", 0
 outputFilePath byte "XING_B24_out.bmp", 0
 
-hInput dword ?
+hInput dword ? ; дескрипторы ввода и вывода в файл
 hStdOut dword ?
 bytesWritten dword ?
 header db 54 dup(0)
 hOutputFILE dword ?
-r db 1 dup(0)
+r db 1 dup(0) ; компоненты синий зеленый красный
 g db 1 dup(0)
 b db 1 dup(0)
 fileSize dd 0
