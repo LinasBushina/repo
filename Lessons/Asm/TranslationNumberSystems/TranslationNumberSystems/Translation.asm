@@ -1,4 +1,4 @@
-includelib libcmt.lib
+;includelib libcmt.lib
 
 .386
 .model flat, c
@@ -29,7 +29,7 @@ resbuf_2 db 50 dup(0)
 
 .code
 public main
-main proc
+main proc C
 	invoke printf, addr fsEnterNum
 	invoke scanf, addr fsScanfNum, addr numBuf
 	invoke printf, addr fsEnterFrom

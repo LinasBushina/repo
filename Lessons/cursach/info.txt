@@ -1,0 +1,10 @@
+//еяйд
+http://robot.bmstu.ru/files/GOST/gost-eskd.html
+
+//printf asm on win10 vs2017
+1) You'll need to add these libraries to your dependencies: libcmt.lib, libvcruntime.lib, libucrt.lib, legacy_stdio_definitions.lib. Alternatively you could use includelib to include these libraries in your assembly file.
+2) Specify C calling convention for your main procedure using PROC C
+3) At the end of your file (and this is important) do not use end main, use end only. Not fixing this may cause unexpected crashes.
+4) Although we can use ExitProcess to exit our application, we can also put the return code in EAX and do a ret to return. The C runtime calls our main function, and will call the shutdown code for us upon returning.
+//link
+https://stackoverflow.com/questions/33721059/call-c-standard-library-function-from-asm-in-visual-studio
