@@ -1,0 +1,3 @@
+da=e.txt
+b=zip.txt
+cab=goo.txt

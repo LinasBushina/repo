@@ -1,0 +1,16 @@
+﻿Сборка начата 26.03.2018 9:12:24.
+     1>Проект "E:\utgiubjh\utgiubjh\utgiubjh.vcxproj" в узле 2 (целевые объекты build).
+     1>PrepareForBuild:
+         Создание каталога "E:\utgiubjh\Release\".
+       InitializeBuildStatus:
+         Создание "Release\utgiubjh.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt 6uw56.cpp
+         6uw56.cpp
+     1>6uw56.cpp(9): error C2664: MessageBoxW: невозможно преобразовать параметр 2 из "const char [22]" в "LPCWSTR"
+                 Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции
+     1>Построение проекта "E:\utgiubjh\utgiubjh\utgiubjh.vcxproj" завершено (целевые объекты build) с ошибкой.
+
+СБОЙ построения.
+
+Затраченное время: 00:00:23.94

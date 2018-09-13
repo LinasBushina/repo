@@ -1,0 +1,10 @@
+List of celebrities
+Creation date: 2017/09/11
+ 
+; (Comment) Male List
+Bill,Gates,1955/10/28,Male
+Steve,Jobs,1955/02/24,Male
+Mark,Zuckerberg,1984/05/16,Male
+Sundar,Pichai,1972/07/12,Male
+; (Comment) Female List
+Hillary,Clinton,1947/10/26,Female
