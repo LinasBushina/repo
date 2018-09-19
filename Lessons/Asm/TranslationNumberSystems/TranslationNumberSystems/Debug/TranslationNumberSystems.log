@@ -1,1 +1,2 @@
-﻿  TranslationNumberSystems.vcxproj -> D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Asm\TranslationNumberSystems\Debug\TranslationNumberSystems.exe
+﻿  Assembling Translation.asm...
+LINK : fatal error LNK1104: не удается открыть файл "libucrt.lib"

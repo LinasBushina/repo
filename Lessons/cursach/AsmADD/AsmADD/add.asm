@@ -29,10 +29,17 @@ main proc C
 	add eax, ebx				;делаем add элементов
 	add eax, [carry]
 
+	;if (sum == 0 || sum == 1)
+	;{ carry = 0;}
+	;else if (sum == 2)
+	;{ sum == 0; carry = 1; }
+	;else if (sum == 3)
+	;{ sum = 1; carry = 1; }
+
 	cmp eax, 2
 	je	one_one_case
 	cmp eax, 3
-	je	one_one_case
+	je	one_one_one_case
 	mov [carry], 0
 	jmp put_to_arr1
 

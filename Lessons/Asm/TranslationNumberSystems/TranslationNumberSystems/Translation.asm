@@ -1,4 +1,8 @@
 ;includelib libcmt.lib
+includelib libcmt.lib
+includelib libvcruntime.lib
+includelib libucrt.lib
+includelib legacy_stdio_definitions.lib
 
 .386
 .model flat, c
