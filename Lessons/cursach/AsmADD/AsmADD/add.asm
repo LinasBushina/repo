@@ -18,10 +18,10 @@ carry dd 0
 .code
 public main
 main proc C
-	;xor
+	;add
 	mov ecx, 7
 	
-	xor_step:
+	add_step:
 	mov edi, offset arr1		;берем адрес первого массива
 	mov eax, [edi + ecx * 4]	;берем очередной элемент 1м
 	mov edi, offset arr2		;берем адрес второго массива
@@ -51,7 +51,7 @@ main proc C
 
 	dec ecx						;увеличиваем счетчик
 	cmp ecx, -1			;счетчик == -1
-	jne xor_step				;jump not equal
+	jne add_step				;jump not equal
 
 	print_step:
 	mov edi, offset arr1
