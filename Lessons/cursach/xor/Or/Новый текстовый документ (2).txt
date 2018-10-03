@@ -1,0 +1,76 @@
+For16_h proc
+	
+	ret
+For16_h endp
+
+For15_i proc
+	ret
+For15_i endp
+
+For14_j proc
+	ret
+For14_j endp
+
+
+For13_k proc
+	ret
+For13_k endp
+
+For12_l proc
+	ret
+For12_l endp
+
+For11_m proc
+	ret
+For11_m endp
+
+Number_rows_11_16 proc ; число из строки  ++
+	xor edx,edx
+	go:
+		inc count
+		mov dl,count
+		lea eax,buffer
+		add eax,edx
+		mov dl,[eax]
+		cmp dl,255
+	jne go
+		dec count
+		dec count
+		lea eax,buffer
+	
+	cmp current_Base,11
+	je for11
+	cmp current_Base,12
+	je for12
+	cmp current_Base,13
+	je for13
+	cmp current_Base,14
+	je for14
+	cmp current_Base,15
+	je for15
+	cmp current_Base,16
+	
+	call For16_h
+	jmp over
+
+	for15:
+	call For15_i
+	jmp over
+
+	for14:
+	call For14_j
+	jmp over
+
+	for13:
+	call For13_k
+	jmp over
+
+	for12:
+	call For12_l
+	jmp over
+
+	for11:
+	call For11_m
+	over:
+	ret
+Number_rows_11_16 endp

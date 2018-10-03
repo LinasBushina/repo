@@ -1,0 +1,18 @@
+﻿Сборка начата 19.09.2018 23:03:57.
+     1>Проект "C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\cursach\AsmADD\AsmADD\AsmADD.vcxproj" в узле 2 (целевые объекты Build).
+     1>_MASM:
+         Assembling add.asm...
+         cmd.exe /C "C:\Users\Галина Бушина\AppData\Local\Temp\tmp97144825d89a4feeba45f8a173cb20b7.cmd"
+         ml64.exe /c /nologo /Zi /Fo"x64\Debug\add.obj" /W3 /errorReport:prompt  /Taadd.asm
+     1>add.asm(6): error A2008: syntax error : .
+     1>add.asm(7): error A2008: syntax error : .
+     1>add.asm(8): error A2008: syntax error : .
+     1>add.asm(9): error A2008: syntax error : ,
+     1>add.asm(62): error A2008: syntax error : printf
+     1>add.asm(69): warning A6004: procedure argument or local not referenced : C
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\BuildCustomizations\masm.targets(50,5): error MSB3721: выход из команды "ml64.exe /c /nologo /Zi /Fo"x64\Debug\add.obj" /W3 /errorReport:prompt  /Taadd.asm" с кодом "1".
+     1>Сборка проекта "C:\Users\Галина Бушина\Desktop\программирование\repo\repo\Lessons\cursach\AsmADD\AsmADD\AsmADD.vcxproj" завершена (целевые объекты Build) с ошибкой.
+
+Ошибка сборки.
+
+Затраченное время: 00:00:00.56
