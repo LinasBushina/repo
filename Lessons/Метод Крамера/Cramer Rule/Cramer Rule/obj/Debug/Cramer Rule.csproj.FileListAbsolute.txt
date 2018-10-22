@@ -1,0 +1,7 @@
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Метод Крамера\Cramer Rule\Cramer Rule\bin\Debug\Cramer Rule.exe.config
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Метод Крамера\Cramer Rule\Cramer Rule\bin\Debug\Cramer Rule.exe
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Метод Крамера\Cramer Rule\Cramer Rule\bin\Debug\Cramer Rule.pdb
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Метод Крамера\Cramer Rule\Cramer Rule\obj\Debug\Cramer Rule.csprojAssemblyReference.cache
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Метод Крамера\Cramer Rule\Cramer Rule\obj\Debug\Cramer Rule.csproj.CoreCompileInputs.cache
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Метод Крамера\Cramer Rule\Cramer Rule\obj\Debug\Cramer Rule.exe
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Метод Крамера\Cramer Rule\Cramer Rule\obj\Debug\Cramer Rule.pdb
