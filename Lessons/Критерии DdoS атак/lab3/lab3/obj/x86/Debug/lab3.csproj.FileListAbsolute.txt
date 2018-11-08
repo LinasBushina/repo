@@ -1,0 +1,6 @@
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Критерии DdoS атак\lab3\lab3\bin\Debug\lab3.exe
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Критерии DdoS атак\lab3\lab3\bin\Debug\lab3.pdb
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Критерии DdoS атак\lab3\lab3\obj\x86\Debug\lab3.csprojAssemblyReference.cache
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Критерии DdoS атак\lab3\lab3\obj\x86\Debug\lab3.csproj.CoreCompileInputs.cache
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Критерии DdoS атак\lab3\lab3\obj\x86\Debug\lab3.exe
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Критерии DdoS атак\lab3\lab3\obj\x86\Debug\lab3.pdb
