@@ -12,6 +12,7 @@ for d in range(1,5,1):
 		p = Popen(batch , cwd=r'.')
 		p.communicate()
 		ret = int(p.returncode)
+		p.kill()
 		if ret == 0:
 			print('Pass:', pswd)
 			break
