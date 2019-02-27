@@ -1,0 +1,7 @@
+E:\4 курс 2 семестер\КМЗИ\lab1\lab1\bin\Debug\lab1.exe
+E:\4 курс 2 семестер\КМЗИ\lab1\lab1\bin\Debug\lab1.pdb
+E:\4 курс 2 семестер\КМЗИ\lab1\lab1\obj\x86\Debug\lab1.Form1.resources
+E:\4 курс 2 семестер\КМЗИ\lab1\lab1\obj\x86\Debug\lab1.Properties.Resources.resources
+E:\4 курс 2 семестер\КМЗИ\lab1\lab1\obj\x86\Debug\lab1.csproj.GenerateResource.Cache
+E:\4 курс 2 семестер\КМЗИ\lab1\lab1\obj\x86\Debug\lab1.exe
+E:\4 курс 2 семестер\КМЗИ\lab1\lab1\obj\x86\Debug\lab1.pdb
