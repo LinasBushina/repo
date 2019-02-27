@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\WinRAR\Rar.exe" x ar.rar . -y -p0078
