@@ -1,7 +1,7 @@
 from subprocess import Popen
 batch = 'brute.bat'
-code = r'"C:\Program Files (x86)\WinRAR\Rar.exe" x ar.rar . -y -p'
-#code = r'"C:\Program Files\WinRAR\WinRAR.exe" x ar.rar . -y -p'
+#code = r'"C:\Program Files (x86)\WinRAR\Rar.exe" x ar.rar . -y -p'
+code = r'"C:\Program Files\WinRAR\Rar.exe" x ar.rar . -y -p'
 
 for d in range(1,5,1):
 	for i in range(10 ** d):
