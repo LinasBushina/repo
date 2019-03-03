@@ -23,8 +23,28 @@ namespace lab1
         }
 
         OpenFileDialog input_file = new OpenFileDialog();
+        // генерация ключа
 
-        private void button1_Click(object sender, EventArgs e)
+        public static int m = 0;
+        public static int n = 0;
+        public char[,] array = new char[m, n];
+        public void button3_Click(object sender, EventArgs e)
+        {
+          
+            // запись ключа в отдельный файл 
+            StreamWriter sw = new StreamWriter(@"F:\lab1\Key.txt");
+            Random rnd = new Random();
+            m = rnd.Next(5, 15);
+            n = rnd.Next(5, 15);
+            sw.WriteLine(m);
+            sw.WriteLine(n);
+            sw.Close();
+
+            MessageBox.Show("Ключ сгенерирован!");
+        }
+
+
+        public void button1_Click(object sender, EventArgs e)
         {
             if (input_file.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
@@ -36,18 +56,28 @@ namespace lab1
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        public void button2_Click(object sender, EventArgs e)
         {
             //MessageBox.Show("Hello");
-            string line;
             string path = textBox1.Text;
+            char[] m1 = new char[n];
             System.IO.StreamReader file = new System.IO.StreamReader(@path);
-            while ((line = file.ReadLine()) != null)
+            do
             {
-                MessageBox.Show(line);
+                file.Read(m1, 0, n);  
+                for (int i = 0; i < n; i++)
+                {
+                    for (int j = 0; j < m; j++)
+                    {
+                        array[i, j] = m1[j];
+                    }
+                }
             }
-            
-            file.Close();  
+            while (file.ReadLine() != null);
+            file.Close();
+         
+          
+
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
@@ -60,21 +90,17 @@ namespace lab1
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         OpenFileDialog input_file1 = new OpenFileDialog();
-        private void button4_Click(object sender, EventArgs e)
+        public void button4_Click(object sender, EventArgs e)
         {
             if (input_file1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                System.IO.StreamReader sr = new System.IO.StreamReader(input_file1.FileName);
+                System.IO.StreamReader sr1 = new System.IO.StreamReader(input_file1.FileName);
                 textBox2.Text = input_file1.FileName;
-                string text = sr.ReadToEnd();
+                string text = sr1.ReadToEnd();
                 MessageBox.Show(text);
-                sr.Close();
+                sr1.Close();
             }  
         }
 

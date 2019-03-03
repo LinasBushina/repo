@@ -12,3 +12,12 @@ C:\Users\Галя\Desktop\githuber\repo\Lessons\Шифрование\lab1\lab1\b
 C:\Users\Галя\Desktop\githuber\repo\Lessons\Шифрование\lab1\lab1\obj\x86\Debug\lab1.Form1.resources
 C:\Users\Галя\Desktop\githuber\repo\Lessons\Шифрование\lab1\lab1\obj\x86\Debug\lab1.Properties.Resources.resources
 C:\Users\Галя\Desktop\githuber\repo\Lessons\Шифрование\lab1\lab1\obj\x86\Debug\lab1.csproj.GenerateResource.Cache
+F:\lab1\lab1\obj\x86\Debug\lab1.exe
+F:\lab1\lab1\obj\x86\Debug\lab1.pdb
+F:\lab1\lab1\bin\Debug\lab1.exe
+F:\lab1\lab1\bin\Debug\lab1.pdb
+F:\lab1\lab1\obj\x86\Debug\lab1.Form1.resources
+F:\lab1\lab1\obj\x86\Debug\lab1.Properties.Resources.resources
+F:\lab1\lab1\obj\x86\Debug\lab1.csproj.GenerateResource.Cache
+E:\lab1\lab1\obj\x86\Debug\lab1.exe
+E:\lab1\lab1\obj\x86\Debug\lab1.pdb
