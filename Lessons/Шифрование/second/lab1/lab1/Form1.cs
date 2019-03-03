@@ -12,6 +12,8 @@ namespace lab1
 {
     public partial class Form1 : Form
     {
+        private const char FILLER = '☃';
+
         public Form1()
         {
             InitializeComponent();
@@ -22,7 +24,6 @@ namespace lab1
 
         }
 
-        OpenFileDialog input_file = new OpenFileDialog();
         // генерация ключа
 
         public static int m = 0;
@@ -43,41 +44,77 @@ namespace lab1
             MessageBox.Show("Ключ сгенерирован!");
         }
 
-
-        public void button1_Click(object sender, EventArgs e)
+        private void GetDiagPath(TextBox box)
         {
-            if (input_file.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            OpenFileDialog inpFD = new OpenFileDialog();
+            if (inpFD.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            { box.Text = inpFD.FileName; }
+        }
+
+        public void ChooseFileToEncrypt(object sender, EventArgs e)
+        {
+            GetDiagPath(inpFileBox);
+            string name = Path.GetFileNameWithoutExtension(inpFileBox.Text);
+            string ext = Path.GetExtension(inpFileBox.Text);
+            outFileBox.Text = Path.GetDirectoryName(inpFileBox.Text) +
+                Path.DirectorySeparatorChar + name + "_encrypted" + ext;
+        }
+                //StreamReader sr =
+                //    new StreamReader(inpFD.FileName);
+                //string text = sr.ReadToEnd();
+                //sr.Close();          
+
+        private int[] GenKeys()
+        {
+            int[] keys = new int[2];
+            Random rnd = new Random();
+            //rows
+            keys[0] = rnd.Next(5, 15);
+            //cols
+            keys[1] = rnd.Next(5, 15);
+            return keys;
+        }
+
+        private void Transpose(char[] matrix, int rows)
+        {
+            int cols = matrix.Length / rows;
+            for (int i = 0; i < rows; i++)
             {
-                System.IO.StreamReader sr = new System.IO.StreamReader(input_file.FileName);
-                textBox1.Text = input_file.FileName;
-                string text = sr.ReadToEnd();
-                MessageBox.Show(text);
-                sr.Close();
+                for (int j = i; j < cols; j++)
+                {
+                    int ind1 = i * cols + j;
+                    int ind2 = j * cols + i;
+                    char temp = matrix[ind1];
+                    matrix[ind1] = matrix[ind2];
+                    matrix[ind2] = temp;
+                }
             }
         }
 
-        public void button2_Click(object sender, EventArgs e)
+        private void FillMatrix(char[] matrix, int count)
         {
-            //MessageBox.Show("Hello");
-            string path = textBox1.Text;
-            char[] m1 = new char[n];
-            System.IO.StreamReader file = new System.IO.StreamReader(@path);
-            do
+            for (int i = count; i < matrix.Length; i++)
+            { matrix[i] = FILLER; }
+        }
+
+        public void encrypt(object sender, EventArgs e)
+        {
+            using (StreamReader sr = new StreamReader(inpFileBox.Text))
+            using (StreamWriter sw = new StreamWriter(outFileBox.Text))
             {
-                file.Read(m1, 0, n);  
-                for (int i = 0; i < n; i++)
+                int[] keys = GenKeys();
+                int rows = keys[0];
+                int cols = keys[1];
+
+                int count;
+                char[] buf = new char[rows * cols];
+                while ((count = sr.Read(buf, 0, rows * cols)) != 0)
                 {
-                    for (int j = 0; j < m; j++)
-                    {
-                        array[i, j] = m1[j];
-                    }
+                    FillMatrix(buf, count);
+                    Transpose(buf, rows);
+                    sw.Write(buf, 0, rows * cols);
                 }
             }
-            while (file.ReadLine() != null);
-            file.Close();
-         
-          
-
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
@@ -88,21 +125,7 @@ namespace lab1
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
-       
-        OpenFileDialog input_file1 = new OpenFileDialog();
-        public void button4_Click(object sender, EventArgs e)
-        {
-            if (input_file1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                System.IO.StreamReader sr1 = new System.IO.StreamReader(input_file1.FileName);
-                textBox2.Text = input_file1.FileName;
-                string text = sr1.ReadToEnd();
-                MessageBox.Show(text);
-                sr1.Close();
-            }  
-        }
+        }        
 
         private void button6_Click(object sender, EventArgs e)
         {
@@ -134,7 +157,9 @@ namespace lab1
 
         }
 
-        
-        
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
