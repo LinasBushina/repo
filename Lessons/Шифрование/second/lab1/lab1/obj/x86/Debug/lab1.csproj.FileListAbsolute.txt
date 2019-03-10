@@ -30,3 +30,5 @@ D:\Desktop\Репетиторство\Галина Бушина\Репозито
 D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\second\lab1\lab1\obj\x86\Debug\lab1.csproj.CoreCompileInputs.cache
 D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\second\lab1\lab1\obj\x86\Debug\lab1.exe
 D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\second\lab1\lab1\obj\x86\Debug\lab1.pdb
+C:\Users\Галя\Desktop\githuber\repo\Lessons\Шифрование\second\lab1\lab1\obj\x86\Debug\lab1.exe
+C:\Users\Галя\Desktop\githuber\repo\Lessons\Шифрование\second\lab1\lab1\obj\x86\Debug\lab1.pdb
