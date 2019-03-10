@@ -56,13 +56,13 @@ namespace lab1
             GetDiagPath(inpFileBox);
             string name = Path.GetFileNameWithoutExtension(inpFileBox.Text);
             string ext = Path.GetExtension(inpFileBox.Text);
+
             outFileBox.Text = Path.GetDirectoryName(inpFileBox.Text) +
                 Path.DirectorySeparatorChar + name + "_encrypted" + ext;
+
+            outKeysBox.Text = Path.GetDirectoryName(inpFileBox.Text) +
+                Path.DirectorySeparatorChar + name + "_keys" + ext;
         }
-                //StreamReader sr =
-                //    new StreamReader(inpFD.FileName);
-                //string text = sr.ReadToEnd();
-                //sr.Close();          
 
         private int[] GenKeys()
         {
@@ -75,22 +75,6 @@ namespace lab1
             return keys;
         }
 
-        private void Transpose(char[] matrix, int rows)
-        {
-            int cols = matrix.Length / rows;
-            for (int i = 0; i < rows; i++)
-            {
-                for (int j = i; j < cols; j++)
-                {
-                    int ind1 = i * cols + j;
-                    int ind2 = j * cols + i;
-                    char temp = matrix[ind1];
-                    matrix[ind1] = matrix[ind2];
-                    matrix[ind2] = temp;
-                }
-            }
-        }
-
         private void FillMatrix(char[] matrix, int count)
         {
             for (int i = count; i < matrix.Length; i++)
@@ -100,21 +84,81 @@ namespace lab1
         public void encrypt(object sender, EventArgs e)
         {
             using (StreamReader sr = new StreamReader(inpFileBox.Text))
-            using (StreamWriter sw = new StreamWriter(outFileBox.Text))
+            using (StreamWriter swf = new StreamWriter(outFileBox.Text))
+            using (StreamWriter swk = new StreamWriter(outKeysBox.Text))
             {
                 int[] keys = GenKeys();
                 int rows = keys[0];
                 int cols = keys[1];
+                swk.WriteLine(rows.ToString() + " " + cols.ToString());
 
                 int count;
                 char[] buf = new char[rows * cols];
                 while ((count = sr.Read(buf, 0, rows * cols)) != 0)
                 {
                     FillMatrix(buf, count);
-                    Transpose(buf, rows);
-                    sw.Write(buf, 0, rows * cols);
+                    for (int j = 0; j < cols; j++)
+                    {
+                        for (int i = 0; i < rows; i++)
+                        {
+                            int index = i * cols + j;
+                            swf.Write(buf[index]);
+                        }
+                    }
                 }
             }
+            MessageBox.Show(Path.GetFileNameWithoutExtension(
+                inpFileBox.Text) + " encrypted");
+        }
+
+
+        private void selectKeyEncButton_Click(object sender, EventArgs e)
+        {
+            GetDiagPath(encInpKeyBox);
+            string name = Path.GetFileNameWithoutExtension(encInpKeyBox.Text);
+            string ext = Path.GetExtension(encInpKeyBox.Text);
+
+            outDecFileBox.Text = Path.GetDirectoryName(encInpKeyBox.Text) +
+                Path.DirectorySeparatorChar + name + "_decrypted" + ext;
+        }
+        
+        private void selectFileDecButton_Click(object sender, EventArgs e)
+        {
+            GetDiagPath(encInpFileBox);
+            string name = Path.GetFileNameWithoutExtension(encInpFileBox.Text);
+            string ext = Path.GetExtension(encInpFileBox.Text);
+
+            outDecFileBox.Text = Path.GetDirectoryName(encInpFileBox.Text) +
+                Path.DirectorySeparatorChar + name + "_decrypted" + ext;
+        }
+        
+        private void decryptButton_Click(object sender, EventArgs e)
+        {
+            using (StreamReader srk = new StreamReader(encInpKeyBox.Text))
+            using (StreamReader srf = new StreamReader(encInpFileBox.Text))
+            using (StreamWriter sw = new StreamWriter(outDecFileBox.Text))
+            {
+                string[] keystr = srk.ReadLine().Split();
+                int rows = int.Parse(keystr[0]);
+                int cols = int.Parse(keystr[1]);
+
+                char[] buf = new char[rows * cols];
+                while (srf.Read(buf, 0, rows * cols) != 0)
+                {
+                    for (int i = 0; i < rows; i++)
+                    {
+                        for (int j = 0; j < cols; j++)
+                        {
+                            int index = j * rows + i;
+                            char letter = buf[index];
+                            if (letter != FILLER)
+                            { sw.Write(letter); }
+                        }
+                    }
+                }
+            }
+            MessageBox.Show(Path.GetFileNameWithoutExtension(
+                encInpFileBox.Text) + " deccrypted");
         }
 
         private void tabPage1_Click(object sender, EventArgs e)

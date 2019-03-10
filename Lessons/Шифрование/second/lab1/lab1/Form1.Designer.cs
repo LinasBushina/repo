@@ -31,16 +31,17 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.outFileBox = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.inpFileBox = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.outKeysBox = new System.Windows.Forms.TextBox();
+            this.encInpKeyBox = new System.Windows.Forms.TextBox();
+            this.encInpFileBox = new System.Windows.Forms.TextBox();
+            this.outDecFileBox = new System.Windows.Forms.TextBox();
+            this.selectKeyEncButton = new System.Windows.Forms.Button();
+            this.selectFileDecButton = new System.Windows.Forms.Button();
+            this.decryptButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -58,8 +59,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.outKeysBox);
             this.tabPage1.Controls.Add(this.outFileBox);
-            this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.inpFileBox);
@@ -74,28 +75,18 @@
             // 
             // outFileBox
             // 
-            this.outFileBox.Location = new System.Drawing.Point(6, 33);
+            this.outFileBox.Location = new System.Drawing.Point(6, 59);
             this.outFileBox.Name = "outFileBox";
             this.outFileBox.ReadOnly = true;
             this.outFileBox.Size = new System.Drawing.Size(439, 20);
             this.outFileBox.TabIndex = 4;
             this.outFileBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(144, 225);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(145, 41);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Сгенерировать ключ";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(451, 33);
+            this.button2.Location = new System.Drawing.Point(451, 48);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 20);
+            this.button2.Size = new System.Drawing.Size(88, 30);
             this.button2.TabIndex = 2;
             this.button2.Text = "Зашифровать";
             this.button2.UseVisualStyleBackColor = true;
@@ -105,7 +96,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(451, 7);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 20);
+            this.button1.Size = new System.Drawing.Size(88, 35);
             this.button1.TabIndex = 1;
             this.button1.Text = "Выбрать файл";
             this.button1.UseVisualStyleBackColor = true;
@@ -121,11 +112,12 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.button5);
-            this.tabPage2.Controls.Add(this.textBox3);
-            this.tabPage2.Controls.Add(this.button7);
-            this.tabPage2.Controls.Add(this.button8);
-            this.tabPage2.Controls.Add(this.textBox4);
+            this.tabPage2.Controls.Add(this.decryptButton);
+            this.tabPage2.Controls.Add(this.selectFileDecButton);
+            this.tabPage2.Controls.Add(this.selectKeyEncButton);
+            this.tabPage2.Controls.Add(this.outDecFileBox);
+            this.tabPage2.Controls.Add(this.encInpFileBox);
+            this.tabPage2.Controls.Add(this.encInpKeyBox);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -134,51 +126,65 @@
             this.tabPage2.Text = "Расшифровать";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // outKeysBox
             // 
-            this.button5.Location = new System.Drawing.Point(409, 169);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 48);
-            this.button5.TabIndex = 11;
-            this.button5.Text = "Выбрать ключ";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.outKeysBox.Location = new System.Drawing.Point(6, 33);
+            this.outKeysBox.Name = "outKeysBox";
+            this.outKeysBox.ReadOnly = true;
+            this.outKeysBox.Size = new System.Drawing.Size(439, 20);
+            this.outKeysBox.TabIndex = 5;
             // 
-            // textBox3
+            // encInpKeyBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(29, 182);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(313, 20);
-            this.textBox3.TabIndex = 10;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.encInpKeyBox.Location = new System.Drawing.Point(3, 6);
+            this.encInpKeyBox.Name = "encInpKeyBox";
+            this.encInpKeyBox.Size = new System.Drawing.Size(439, 20);
+            this.encInpKeyBox.TabIndex = 1;
             // 
-            // button7
+            // encInpFileBox
             // 
-            this.button7.Location = new System.Drawing.Point(392, 315);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(124, 72);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "Расшифровать";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.encInpFileBox.Location = new System.Drawing.Point(3, 32);
+            this.encInpFileBox.Name = "encInpFileBox";
+            this.encInpFileBox.Size = new System.Drawing.Size(439, 20);
+            this.encInpFileBox.TabIndex = 2;
             // 
-            // button8
+            // outDecFileBox
             // 
-            this.button8.Location = new System.Drawing.Point(409, 83);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 51);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Выбрать файл";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.outDecFileBox.Location = new System.Drawing.Point(3, 58);
+            this.outDecFileBox.Name = "outDecFileBox";
+            this.outDecFileBox.ReadOnly = true;
+            this.outDecFileBox.Size = new System.Drawing.Size(439, 20);
+            this.outDecFileBox.TabIndex = 6;
             // 
-            // textBox4
+            // selectKeyEncButton
             // 
-            this.textBox4.Location = new System.Drawing.Point(29, 99);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(313, 20);
-            this.textBox4.TabIndex = 6;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.selectKeyEncButton.Location = new System.Drawing.Point(448, 6);
+            this.selectKeyEncButton.Name = "selectKeyEncButton";
+            this.selectKeyEncButton.Size = new System.Drawing.Size(88, 20);
+            this.selectKeyEncButton.TabIndex = 7;
+            this.selectKeyEncButton.Text = "Выбрать ключ";
+            this.selectKeyEncButton.UseVisualStyleBackColor = true;
+            this.selectKeyEncButton.Click += new System.EventHandler(this.selectKeyEncButton_Click);
+            // 
+            // selectFileDecButton
+            // 
+            this.selectFileDecButton.Location = new System.Drawing.Point(448, 32);
+            this.selectFileDecButton.Name = "selectFileDecButton";
+            this.selectFileDecButton.Size = new System.Drawing.Size(88, 20);
+            this.selectFileDecButton.TabIndex = 8;
+            this.selectFileDecButton.Text = "Выбрать файл";
+            this.selectFileDecButton.UseVisualStyleBackColor = true;
+            this.selectFileDecButton.Click += new System.EventHandler(this.selectFileDecButton_Click);
+            // 
+            // decryptButton
+            // 
+            this.decryptButton.Location = new System.Drawing.Point(448, 57);
+            this.decryptButton.Name = "decryptButton";
+            this.decryptButton.Size = new System.Drawing.Size(88, 20);
+            this.decryptButton.TabIndex = 9;
+            this.decryptButton.Text = "Расшифоровать";
+            this.decryptButton.UseVisualStyleBackColor = true;
+            this.decryptButton.Click += new System.EventHandler(this.decryptButton_Click);
             // 
             // Form1
             // 
@@ -206,13 +212,14 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox inpFileBox;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox outFileBox;
+        private System.Windows.Forms.TextBox outKeysBox;
+        private System.Windows.Forms.Button decryptButton;
+        private System.Windows.Forms.Button selectFileDecButton;
+        private System.Windows.Forms.Button selectKeyEncButton;
+        private System.Windows.Forms.TextBox outDecFileBox;
+        private System.Windows.Forms.TextBox encInpFileBox;
+        private System.Windows.Forms.TextBox encInpKeyBox;
     }
 }
 
