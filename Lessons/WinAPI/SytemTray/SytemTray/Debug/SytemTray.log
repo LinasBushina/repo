@@ -1,9 +1,5 @@
-﻿Построение начато 26.03.2019 22:23:06.
-     1>Проект "C:\Users\Галя\Desktop\githuber\repo\Lessons\WinAPI\SytemTray\SytemTray\SytemTray.vcxproj" в узле 2 (целевые объекты build).
-       Файл проекта содержит ToolsVersion="12.0". Возможно, этот набор инструментов неизвестен или отсутствует (в этом случае проблему можно устранить, установив подходящую версию MSBuild), либо для данной сборки определено конкретное значение ToolsVersion в параметрах политики. Проект обрабатывается как имеющий ToolsVersion="4.0". Дополнительные сведения см. по ссылке http://go.microsoft.com/fwlink/?LinkId=291333.
-     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\Microsoft.Cpp.Win32.Targets(518,5): error MSB8008: указанный набор инструментов платформы (v120) не установлен или недопустим. Убедитесь, что выбрано поддерживаемое значение PlatformToolset.
-     1>Построение проекта "C:\Users\Галя\Desktop\githuber\repo\Lessons\WinAPI\SytemTray\SytemTray\SytemTray.vcxproj" завершено (целевые объекты build) с ошибкой.
-
-СБОЙ построения.
-
-Затраченное время: 00:00:01.01
+﻿  stdafx.cpp
+  SytemTray.cpp
+  tray.cpp
+  Generating Code...
+  SytemTray.vcxproj -> D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\WinAPI\SytemTray\Debug\SytemTray.exe
