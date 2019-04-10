@@ -1,0 +1,9 @@
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\Lab2_BruteForce_Crypt\Lab2_BruteForce_Crypt\bin\Release\Lab2_BruteForce_Crypt.exe.config
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\Lab2_BruteForce_Crypt\Lab2_BruteForce_Crypt\bin\Release\Lab2_BruteForce_Crypt.exe
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\Lab2_BruteForce_Crypt\Lab2_BruteForce_Crypt\bin\Release\Lab2_BruteForce_Crypt.pdb
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\Lab2_BruteForce_Crypt\Lab2_BruteForce_Crypt\obj\Release\Lab2_BruteForce_Crypt.Form1.resources
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\Lab2_BruteForce_Crypt\Lab2_BruteForce_Crypt\obj\Release\Lab2_BruteForce_Crypt.Properties.Resources.resources
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\Lab2_BruteForce_Crypt\Lab2_BruteForce_Crypt\obj\Release\Lab2_BruteForce_Crypt.csproj.GenerateResource.cache
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\Lab2_BruteForce_Crypt\Lab2_BruteForce_Crypt\obj\Release\Lab2_BruteForce_Crypt.csproj.CoreCompileInputs.cache
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\Lab2_BruteForce_Crypt\Lab2_BruteForce_Crypt\obj\Release\Lab2_BruteForce_Crypt.exe
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\Lab2_BruteForce_Crypt\Lab2_BruteForce_Crypt\obj\Release\Lab2_BruteForce_Crypt.pdb
