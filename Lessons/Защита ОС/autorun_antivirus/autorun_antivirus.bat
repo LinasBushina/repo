@@ -1,0 +1,1 @@
+attrib -S -H %1
