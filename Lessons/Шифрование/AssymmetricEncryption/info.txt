@@ -1,0 +1,2 @@
+//расширенный алгоритм евклида и вообще
+https://sibac.info/studconf/tech/xlv/60405
