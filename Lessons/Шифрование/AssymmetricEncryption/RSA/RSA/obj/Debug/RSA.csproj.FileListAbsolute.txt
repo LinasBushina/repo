@@ -1,0 +1,10 @@
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\AssymmetricEncryption\RSA\RSA\bin\Debug\RSA.exe.config
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\AssymmetricEncryption\RSA\RSA\bin\Debug\RSA.exe
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\AssymmetricEncryption\RSA\RSA\bin\Debug\RSA.pdb
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\AssymmetricEncryption\RSA\RSA\obj\Debug\RSA.csprojAssemblyReference.cache
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\AssymmetricEncryption\RSA\RSA\obj\Debug\RSA.Form1.resources
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\AssymmetricEncryption\RSA\RSA\obj\Debug\RSA.Properties.Resources.resources
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\AssymmetricEncryption\RSA\RSA\obj\Debug\RSA.csproj.GenerateResource.cache
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\AssymmetricEncryption\RSA\RSA\obj\Debug\RSA.csproj.CoreCompileInputs.cache
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\AssymmetricEncryption\RSA\RSA\obj\Debug\RSA.exe
+D:\Desktop\Репетиторство\Галина Бушина\Репозиторий\repo\Lessons\Шифрование\AssymmetricEncryption\RSA\RSA\obj\Debug\RSA.pdb
