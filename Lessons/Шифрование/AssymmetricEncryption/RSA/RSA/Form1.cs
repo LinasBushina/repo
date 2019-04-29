@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,17 +17,50 @@ namespace RSA
         public Form1()
         {
             InitializeComponent();
+            string dir = Directory.GetCurrentDirectory();
+            outOpenKeyBox.Text = dir + Path.DirectorySeparatorChar + outOpenKeyBox.Text;
         }
 
         private bool GetDiagPath(TextBox box)
         {
             OpenFileDialog fd = new OpenFileDialog();
-            if (fd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            if (fd.ShowDialog() == DialogResult.OK)
             {
                 box.Text = fd.FileName;
                 return true;
             }
             return false;
+        }
+
+        private void selectУтсFileBtn_Click(object sender, EventArgs e)
+        {
+            if (!GetDiagPath(inpEncFileBox)) return;
+            string name = Path.GetFileNameWithoutExtension(inpEncFileBox.Text);
+            string ext = Path.GetExtension(inpEncFileBox.Text);
+            outDecFileBox.Text = Path.GetDirectoryName(inpEncFileBox.Text) +
+                   Path.DirectorySeparatorChar + name + "_decrypted" + ext;
+        }
+
+        int d = -1;
+        int n = -1;
+        private void ecnryptBtn_Click(object sender, EventArgs arg)
+        {
+            using (StreamWriter sw = new StreamWriter(outOpenKeyBox.Text))
+            {
+                int p = Helper.GetRandomPrime();
+                int q = Helper.GetRandomPrime();
+                n = p * q;
+                int f = (p - 1) * (q - 1);
+                int e = Helper.GetCoprime(f);
+                d = Helper.GetMulInverse(e, f);
+                sw.WriteLine(e);
+                sw.WriteLine(n);
+            }
+        }
+
+        private void selectOpenKeyBtn_Click(object sender, EventArgs e)
+        {
+            if (!GetDiagPath(inpOpenKeyBox)) return;
         }
 
         private void selectRawFileBtn_Click(object sender, EventArgs e)
@@ -38,27 +72,54 @@ namespace RSA
                    Path.DirectorySeparatorChar + name + "_encrypted" + ext;
         }
 
-        private void ecnryptBtn_Click(object sender, EventArgs arg)
+        private void encryptBtn_Click(object sender, EventArgs arg)
         {
-            if (inpRawFileBox.Text.Length == 0)
+            if (inpOpenKeyBox.Text.Length == 0)
             {
-                MessageBox.Show("Please input the file!");
+                MessageBox.Show("Please input the open key pair!");
                 return;
             }
-            using (StreamReader sr = new StreamReader(inpRawFileBox.Text))
+            if (inpRawFileBox.Text.Length == 0)
+            {
+                MessageBox.Show("Please input the raw file!");
+                return;
+            }
+            using (StreamReader srKey = new StreamReader(inpOpenKeyBox.Text))
+            using (StreamReader srRaw = new StreamReader(inpRawFileBox.Text))
             using (StreamWriter sw = new StreamWriter(outEncFileBox.Text))
             {
-                int ch;
-                while ((ch = sr.Read()) != -1)
-                {
-                    int p = Helper.GetRandomPrime();
-                    int q = Helper.GetRandomPrime();
-                    int n = p * q;
-                    int f = (p - 1) * (q - 1);
-                    int e = Helper.GetCoprime(f);
-                    int d = Helper.GetMulInverse(e, f);
+                int e = int.Parse(srKey.ReadLine());
+                int n = int.Parse(srKey.ReadLine());
 
-                    int a = 1;
+                BigInteger m;
+                while ((m = srRaw.Read()) != -1)
+                {
+                    string c = BigInteger.ModPow(m, e, n).ToString();
+                    sw.WriteLine(c);
+                }
+            }
+        }
+
+        private void decryptBtn_Click(object sender, EventArgs e)
+        {
+            if (d == -1)
+            {
+                MessageBox.Show("Please make open key pair!");
+                return;
+            }
+            if (inpEncFileBox.Text.Length == 0)
+            {
+                MessageBox.Show("Please input the encrypted file!");
+                return;
+            }
+            using (StreamReader sr = new StreamReader(inpEncFileBox.Text))
+            using (StreamWriter sw = new StreamWriter(outDecFileBox.Text))
+            {
+                while (sr.Peek() >= 0)
+                {
+                    BigInteger c = BigInteger.Parse(sr.ReadLine());
+                    int m = (int)BigInteger.ModPow(c, d, n);
+                    sw.Write((char)m);
                 }
             }
         }

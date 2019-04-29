@@ -51,7 +51,7 @@ namespace RSA
         }
 
         public static int GetRandomPrime()
-        { return GeneratePrimesSieveOfSundaram(new Random().Next(5, 100)).Last(); }
+        { return GeneratePrimesSieveOfSundaram(new Random(DateTime.Now.Millisecond).Next(5, 100)).Last(); }
 
         public static int GetCoprime(int num)
         {
