@@ -25,7 +25,7 @@ namespace Lab2_BruteForce_Crypt
         private void GetDiagPath(TextBox box)
         {
             OpenFileDialog inpFD = new OpenFileDialog();
-            if (inpFD.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            if (inpFD.ShowDialog() == DialogResult.OK)
             { box.Text = inpFD.FileName; }
         }
 
@@ -34,8 +34,8 @@ namespace Lab2_BruteForce_Crypt
 
         private void decryptButton_Click(object sender, EventArgs e)
         {
-            Stopwatch sw = new Stopwatch();
-            sw.Start();
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
             for (int size = 2; size < 16384; size++)
             {
                 for (int rows = 1; rows < size - 1; rows++)
@@ -60,18 +60,21 @@ namespace Lab2_BruteForce_Crypt
                         }
                         string decstr = sb.ToString();
                         HashSet<string> decdict = new HashSet<string>(decstr.Split(new char[] { ' ' }));
-                        bool isCorrect = true;
+                        double limit = (double)limitUpDown.Value / 100.0;
+                        int correctCount = 0;
                         foreach (var word in dict)
+                        { if (decdict.Contains(word)) correctCount++; }
+                        double currLimit = (double)correctCount / dict.Count;
+                        if (currLimit >= limit)
                         {
-                            if (!decdict.Contains(word))
-                            { isCorrect = false; break; }
-                        }
-                        if (isCorrect)
-                        {
-                            sw.Stop();
-                            MessageBox.Show(Path.GetFileNameWithoutExtension(encInpFileBox.Text) +
-                                " deccrypted\n" + "keys = " + rows + " " + cols +
-                                "\nelapsed time = " + sw.ElapsedMilliseconds);
+                            watch.Stop();
+                            string name = Path.GetFileNameWithoutExtension(encInpFileBox.Text);
+                            string ext = Path.GetExtension(encInpFileBox.Text);
+                            File.WriteAllText(Path.GetDirectoryName(encInpFileBox.Text) +
+                                Path.DirectorySeparatorChar + name + "_decrypted" + ext, decstr);
+                            MessageBox.Show(name + " deccrypted\n" + "keys = " + rows + " " + cols +
+                                "\nlimit = " + (currLimit * 100.0).ToString("F1") + "%" +
+                                "\nelapsed time = " + watch.ElapsedMilliseconds);
                             return;
                         }
                     }
@@ -84,7 +87,7 @@ namespace Lab2_BruteForce_Crypt
             GetDiagPath(dictBox);
             string path = dictBox.Text;
             string srcstr = File.ReadAllText(path);
-            dict = new HashSet<string>(srcstr.Split(new char[] { ' ' }));
+            dict = new HashSet<string>(srcstr.Split(new char[0], StringSplitOptions.RemoveEmptyEntries));
         }
     }
 }
