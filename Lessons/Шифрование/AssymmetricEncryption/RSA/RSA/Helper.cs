@@ -90,7 +90,8 @@ namespace RSA
                 X.Add(Y.Last());
                 Y.Add(xLast - Y.Last() * AdivB[revI]);
             }
-            return Y.Last();
+            int d = Y.Last();
+            return (d % f + f) % f;
         }
     }
 }
