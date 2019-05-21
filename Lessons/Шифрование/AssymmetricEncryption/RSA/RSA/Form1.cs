@@ -19,6 +19,7 @@ namespace RSA
             InitializeComponent();
             string dir = Directory.GetCurrentDirectory();
             outOpenKeyBox.Text = dir + Path.DirectorySeparatorChar + outOpenKeyBox.Text;
+            outPrivateKeyBox.Text = dir + Path.DirectorySeparatorChar + outPrivateKeyBox.Text;
         }
 
         private bool GetDiagPath(TextBox box)
@@ -40,21 +41,22 @@ namespace RSA
             outDecFileBox.Text = Path.GetDirectoryName(inpEncFileBox.Text) +
                    Path.DirectorySeparatorChar + name + "_decrypted" + ext;
         }
-
-        int d = -1;
-        int n = -1;
+        
         private void ecnryptBtn_Click(object sender, EventArgs arg)
         {
-            using (StreamWriter sw = new StreamWriter(outOpenKeyBox.Text))
+            using (StreamWriter swo = new StreamWriter(outOpenKeyBox.Text))
+            using (StreamWriter swp = new StreamWriter(outPrivateKeyBox.Text))
             {
                 int p = Helper.GetRandomPrime();
                 int q = Helper.GetRandomPrime();
-                n = p * q;
+                int n = p * q;
                 int f = (p - 1) * (q - 1);
                 int e = Helper.GetCoprime(f);
-                d = Helper.GetMulInverse(e, f);
-                sw.WriteLine(e);
-                sw.WriteLine(n);
+                int d = Helper.GetMulInverse(e, f);
+                swo.WriteLine(e);
+                swo.WriteLine(n);
+                swp.WriteLine(d);
+                swp.WriteLine(n);
             }
         }
 
@@ -102,9 +104,9 @@ namespace RSA
 
         private void decryptBtn_Click(object sender, EventArgs e)
         {
-            if (d == -1)
+            if (inpPrivateKeyBox.Text.Length == 0)
             {
-                MessageBox.Show("Please make open key pair!");
+                MessageBox.Show("Please input the private key pair!");
                 return;
             }
             if (inpEncFileBox.Text.Length == 0)
@@ -112,16 +114,25 @@ namespace RSA
                 MessageBox.Show("Please input the encrypted file!");
                 return;
             }
-            using (StreamReader sr = new StreamReader(inpEncFileBox.Text))
+            using (StreamReader srKey = new StreamReader(inpPrivateKeyBox.Text))
+            using (StreamReader srFile = new StreamReader(inpEncFileBox.Text))
             using (StreamWriter sw = new StreamWriter(outDecFileBox.Text))
             {
-                while (sr.Peek() >= 0)
+                int d = int.Parse(srKey.ReadLine());
+                int n = int.Parse(srKey.ReadLine());
+
+                while (srFile.Peek() >= 0)
                 {
-                    BigInteger c = BigInteger.Parse(sr.ReadLine());
+                    BigInteger c = BigInteger.Parse(srFile.ReadLine());
                     int m = (int)BigInteger.ModPow(c, d, n);
                     sw.Write((char)m);
                 }
             }
+        }
+
+        private void selectPrivateKeyBtn_Click(object sender, EventArgs e)
+        {
+            if (!GetDiagPath(inpPrivateKeyBox)) return;
         }
     }
 }

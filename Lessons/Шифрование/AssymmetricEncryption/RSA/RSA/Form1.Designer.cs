@@ -43,6 +43,9 @@
             this.selectRawFileBtn = new System.Windows.Forms.Button();
             this.outEncFileBox = new System.Windows.Forms.TextBox();
             this.inpRawFileBox = new System.Windows.Forms.TextBox();
+            this.inpPrivateKeyBox = new System.Windows.Forms.TextBox();
+            this.selectPrivateKeyBtn = new System.Windows.Forms.Button();
+            this.outPrivateKeyBox = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.recieverTab.SuspendLayout();
             this.senderTab.SuspendLayout();
@@ -55,11 +58,14 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(563, 110);
+            this.tabControl1.Size = new System.Drawing.Size(563, 143);
             this.tabControl1.TabIndex = 8;
             // 
             // recieverTab
             // 
+            this.recieverTab.Controls.Add(this.outPrivateKeyBox);
+            this.recieverTab.Controls.Add(this.selectPrivateKeyBtn);
+            this.recieverTab.Controls.Add(this.inpPrivateKeyBox);
             this.recieverTab.Controls.Add(this.decryptBtn);
             this.recieverTab.Controls.Add(this.outOpenKeyBox);
             this.recieverTab.Controls.Add(this.outDecFileBox);
@@ -69,14 +75,14 @@
             this.recieverTab.Location = new System.Drawing.Point(4, 22);
             this.recieverTab.Name = "recieverTab";
             this.recieverTab.Padding = new System.Windows.Forms.Padding(3);
-            this.recieverTab.Size = new System.Drawing.Size(555, 84);
+            this.recieverTab.Size = new System.Drawing.Size(555, 117);
             this.recieverTab.TabIndex = 0;
             this.recieverTab.Text = "Получатель";
             this.recieverTab.UseVisualStyleBackColor = true;
             // 
             // decryptBtn
             // 
-            this.decryptBtn.Location = new System.Drawing.Point(451, 59);
+            this.decryptBtn.Location = new System.Drawing.Point(451, 84);
             this.decryptBtn.Name = "decryptBtn";
             this.decryptBtn.Size = new System.Drawing.Size(95, 20);
             this.decryptBtn.TabIndex = 7;
@@ -88,13 +94,13 @@
             // 
             this.outOpenKeyBox.Location = new System.Drawing.Point(6, 7);
             this.outOpenKeyBox.Name = "outOpenKeyBox";
-            this.outOpenKeyBox.Size = new System.Drawing.Size(439, 20);
+            this.outOpenKeyBox.Size = new System.Drawing.Size(216, 20);
             this.outOpenKeyBox.TabIndex = 6;
             this.outOpenKeyBox.Text = "openkey.txt";
             // 
             // outDecFileBox
             // 
-            this.outDecFileBox.Location = new System.Drawing.Point(6, 59);
+            this.outDecFileBox.Location = new System.Drawing.Point(6, 85);
             this.outDecFileBox.Name = "outDecFileBox";
             this.outDecFileBox.ReadOnly = true;
             this.outDecFileBox.Size = new System.Drawing.Size(439, 20);
@@ -106,13 +112,13 @@
             this.makeOpenKeyBtn.Name = "makeOpenKeyBtn";
             this.makeOpenKeyBtn.Size = new System.Drawing.Size(95, 20);
             this.makeOpenKeyBtn.TabIndex = 2;
-            this.makeOpenKeyBtn.Text = "Открытый ключ";
+            this.makeOpenKeyBtn.Text = "Создать ключи";
             this.makeOpenKeyBtn.UseVisualStyleBackColor = true;
             this.makeOpenKeyBtn.Click += new System.EventHandler(this.ecnryptBtn_Click);
             // 
             // selectEncFileBtn
             // 
-            this.selectEncFileBtn.Location = new System.Drawing.Point(451, 33);
+            this.selectEncFileBtn.Location = new System.Drawing.Point(451, 59);
             this.selectEncFileBtn.Name = "selectEncFileBtn";
             this.selectEncFileBtn.Size = new System.Drawing.Size(95, 20);
             this.selectEncFileBtn.TabIndex = 1;
@@ -122,7 +128,7 @@
             // 
             // inpEncFileBox
             // 
-            this.inpEncFileBox.Location = new System.Drawing.Point(6, 33);
+            this.inpEncFileBox.Location = new System.Drawing.Point(6, 59);
             this.inpEncFileBox.Name = "inpEncFileBox";
             this.inpEncFileBox.Size = new System.Drawing.Size(439, 20);
             this.inpEncFileBox.TabIndex = 0;
@@ -138,7 +144,7 @@
             this.senderTab.Location = new System.Drawing.Point(4, 22);
             this.senderTab.Name = "senderTab";
             this.senderTab.Padding = new System.Windows.Forms.Padding(3);
-            this.senderTab.Size = new System.Drawing.Size(555, 84);
+            this.senderTab.Size = new System.Drawing.Size(555, 117);
             this.senderTab.TabIndex = 1;
             this.senderTab.Text = "Отправитель";
             this.senderTab.UseVisualStyleBackColor = true;
@@ -195,6 +201,31 @@
             this.inpRawFileBox.Size = new System.Drawing.Size(439, 20);
             this.inpRawFileBox.TabIndex = 2;
             // 
+            // inpPrivateKeyBox
+            // 
+            this.inpPrivateKeyBox.Location = new System.Drawing.Point(6, 33);
+            this.inpPrivateKeyBox.Name = "inpPrivateKeyBox";
+            this.inpPrivateKeyBox.Size = new System.Drawing.Size(439, 20);
+            this.inpPrivateKeyBox.TabIndex = 8;
+            // 
+            // selectPrivateKeyBtn
+            // 
+            this.selectPrivateKeyBtn.Location = new System.Drawing.Point(451, 33);
+            this.selectPrivateKeyBtn.Name = "selectPrivateKeyBtn";
+            this.selectPrivateKeyBtn.Size = new System.Drawing.Size(95, 20);
+            this.selectPrivateKeyBtn.TabIndex = 9;
+            this.selectPrivateKeyBtn.Text = "Выбрать ключ";
+            this.selectPrivateKeyBtn.UseVisualStyleBackColor = true;
+            this.selectPrivateKeyBtn.Click += new System.EventHandler(this.selectPrivateKeyBtn_Click);
+            // 
+            // outPrivateKeyBox
+            // 
+            this.outPrivateKeyBox.Location = new System.Drawing.Point(229, 7);
+            this.outPrivateKeyBox.Name = "outPrivateKeyBox";
+            this.outPrivateKeyBox.Size = new System.Drawing.Size(216, 20);
+            this.outPrivateKeyBox.TabIndex = 10;
+            this.outPrivateKeyBox.Text = "privatekey.txt";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,6 +260,9 @@
         private System.Windows.Forms.TextBox outOpenKeyBox;
         private System.Windows.Forms.TextBox inpOpenKeyBox;
         private System.Windows.Forms.Button selectOpenKeyBtn;
+        private System.Windows.Forms.TextBox outPrivateKeyBox;
+        private System.Windows.Forms.Button selectPrivateKeyBtn;
+        private System.Windows.Forms.TextBox inpPrivateKeyBox;
     }
 }
 
