@@ -31,6 +31,7 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.Label();
             this.toolStripStatusLabel2 = new System.Windows.Forms.Label();
             this.EnableServicesWorker = new System.ComponentModel.BackgroundWorker();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // toolStripStatusLabel1
@@ -56,11 +57,19 @@
             this.EnableServicesWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.EnableServicesWorker_DoWork);
             this.EnableServicesWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.EnableServicesWorker_RunWorkerCompleted);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(342, 13);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.toolStripStatusLabel2);
             this.Controls.Add(this.toolStripStatusLabel1);
             this.Name = "Form1";
@@ -76,6 +85,7 @@
         private System.Windows.Forms.Label toolStripStatusLabel1;
         private System.Windows.Forms.Label toolStripStatusLabel2;
         private System.ComponentModel.BackgroundWorker EnableServicesWorker;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

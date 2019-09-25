@@ -248,5 +248,169 @@ namespace WindowsUpdateCheckerWinForms
         public void setTextBox2Notification(string txt)
         { toolStripStatusLabel2.Text = txt; }
         #endregion <------- Notification Methods ------->
+
+        #region <------- iUpdateSearcher.BeginDownload Object Abstract Class's ------->
+        // onCompleted [in] 
+        // An ISearchCompletedCallback interface that is called when an asynchronous search operation is complete.
+        public class iUpdateSearcher_onCompleted : ISearchCompletedCallback
+        {
+            private Form1 form1;
+
+            public iUpdateSearcher_onCompleted(Form1 mainForm)
+            {
+                this.form1 = mainForm;
+            }
+
+            // Implementation of IDownloadCompletedCallback interface...
+            public void Invoke(ISearchJob searchJob, ISearchCompletedCallbackArgs e)
+            {
+                form1.iUpdateSearchComplete(this.form1);
+            }
+        }
+
+        // state [in] 
+        // The caller-specific state that is returned by the AsyncState property of the ISearchJob interface.
+        public class iUpdateSearcher_state
+        {
+            private Form1 form1;
+
+            // Implementation of state interface...
+            public iUpdateSearcher_state(Form1 mainForm)
+            {
+                this.form1 = mainForm;
+
+                form1.setTextBox2Notification("State: Search Started...");
+            }
+        }
+
+        #endregion <------- iUpdateSearcher.BeginDownload Object Abstract Class's ------->
+
+        #region <------- iUpdateDownloader.BeginDownload Object Abstract Class's ------->
+        // onProgressChanged [in] 
+        // An IDownloadProgressChangedCallback interface that is called periodically for download progress changes before download is complete.
+        public class iUpdateDownloader_onProgressChanged : IDownloadProgressChangedCallback
+        {
+            private Form1 form1;
+
+            public iUpdateDownloader_onProgressChanged(Form1 mainForm)
+            {
+                this.form1 = mainForm;
+            }
+
+            // Implementation of IDownloadProgressChangedCallback interface...
+            public void Invoke(IDownloadJob downloadJob, IDownloadProgressChangedCallbackArgs e)
+            {
+
+                decimal bDownloaded = ((e.Progress.TotalBytesDownloaded / 1024) / 1024);
+                decimal bToDownloaded = ((e.Progress.TotalBytesToDownload / 1024) / 1024);
+                bDownloaded = decimal.Round(bDownloaded, 2);
+                bToDownloaded = decimal.Round(bToDownloaded, 2);
+
+                form1.setTextBox1Notification("Downloading Update: "
+                 + e.Progress.CurrentUpdateIndex
+                 + "/"
+                 + downloadJob.Updates.Count
+                 + " - "
+                 + bDownloaded + "Mb"
+                 + " / "
+                 + bToDownloaded + "Mb");
+            }
+        }
+
+        // onCompleted [in] 
+        // An IDownloadCompletedCallback interface (C++/COM) that is called when an asynchronous download operation is complete.
+        public class iUpdateDownloader_onCompleted : IDownloadCompletedCallback
+        {
+            private Form1 form1;
+
+            public iUpdateDownloader_onCompleted(Form1 mainForm)
+            {
+                this.form1 = mainForm;
+            }
+
+            // Implementation of IDownloadCompletedCallback interface...
+            public void Invoke(IDownloadJob downloadJob, IDownloadCompletedCallbackArgs e)
+            {
+                form1.iDownloadComplete();
+            }
+        }
+
+        // state [in] 
+        // The caller-specific state that the AsyncState property of the IDownloadJob interface returns. 
+        // A caller may use this parameter to attach a value to the download job object. 
+        // This allows the caller to retrieve custom information about that download job object at a later time.
+        public class iUpdateDownloader_state
+        {
+            private Form1 form1;
+
+            // Implementation of state interface...
+            public iUpdateDownloader_state(Form1 mainForm)
+            {
+                this.form1 = mainForm;
+
+                form1.setTextBox2Notification("State: Download Started...");
+            }
+        }
+        #endregion <------- iUpdateDownloader.BeginDownload Objects ------->
+
+        #region <------- iUpdateInstaller.BeginInstall Object Abstract Class's ------->
+        // onProgressChanged [in] 
+        // An IDownloadProgressChangedCallback interface that is called periodically for download progress changes before download is complete.
+        public class iUpdateInstaller_onProgressChanged : IInstallationProgressChangedCallback
+        {
+            private Form1 form1;
+
+            public iUpdateInstaller_onProgressChanged(Form1 mainForm)
+            {
+                this.form1 = mainForm;
+            }
+
+            // Implementation of IDownloadProgressChangedCallback interface...
+            public void Invoke(IInstallationJob iInstallationJob, IInstallationProgressChangedCallbackArgs e)
+            {
+                form1.setTextBox1Notification("Installing Update: "
+                 + e.Progress.CurrentUpdateIndex
+                 + " / "
+                 + iInstallationJob.Updates.Count
+                 + " - "
+                 + e.Progress.CurrentUpdatePercentComplete + "% Complete");
+            }
+        }
+
+        // onCompleted [in] 
+        // An IDownloadCompletedCallback interface (C++/COM) that is called when an asynchronous download operation is complete.
+        public class iUpdateInstaller_onCompleted : IInstallationCompletedCallback
+        {
+            private Form1 form1;
+
+            public iUpdateInstaller_onCompleted(Form1 mainForm)
+            {
+                this.form1 = mainForm;
+            }
+
+            // Implementation of IDownloadCompletedCallback interface...
+            public void Invoke(IInstallationJob iInstallationJob, IInstallationCompletedCallbackArgs e)
+            {
+                form1.iInstallationComplete();
+            }
+        }
+
+        // state [in] 
+        // The caller-specific state that the AsyncState property of the IDownloadJob interface returns. 
+        // A caller may use this parameter to attach a value to the download job object. 
+        // This allows the caller to retrieve custom information about that download job object at a later time.
+        public class iUpdateInstaller_state
+        {
+            private Form1 form1;
+
+            // Implementation of state interface...
+            public iUpdateInstaller_state(Form1 mainForm)
+            {
+                this.form1 = mainForm;
+
+                form1.setTextBox2Notification("State: Installation Started...");
+            }
+        }
+        #endregion <------- iUpdateInstaller.BeginInstall Objects ------->
     }
 }
