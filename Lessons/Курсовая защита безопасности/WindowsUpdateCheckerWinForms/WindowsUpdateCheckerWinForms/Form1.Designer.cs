@@ -31,7 +31,7 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.Label();
             this.toolStripStatusLabel2 = new System.Windows.Forms.Label();
             this.EnableServicesWorker = new System.ComponentModel.BackgroundWorker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // toolStripStatusLabel1
@@ -59,16 +59,17 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(342, 13);
+            this.textBox1.Location = new System.Drawing.Point(248, 10);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(540, 272);
             this.textBox1.TabIndex = 2;
+            this.textBox1.Text = "";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 293);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.toolStripStatusLabel2);
             this.Controls.Add(this.toolStripStatusLabel1);
@@ -85,7 +86,7 @@
         private System.Windows.Forms.Label toolStripStatusLabel1;
         private System.Windows.Forms.Label toolStripStatusLabel2;
         private System.ComponentModel.BackgroundWorker EnableServicesWorker;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RichTextBox textBox1;
     }
 }
 
